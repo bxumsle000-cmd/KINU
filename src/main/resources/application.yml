@@ -1,5 +1,9 @@
 # 小提醒：值寫成 "${變數名:預設值}" 的意思是「有設這個環境變數就用它，沒設就用冒號後面的預設值」
 
+# 伺服器設定：Railway 會用 PORT 環境變數指定要聽的 port，本機沒設就用 8080
+server:
+  port: ${PORT:8080}
+
 # Spring Boot 本身的設定都放在 spring 底下
 spring:
   application:
@@ -8,9 +12,10 @@ spring:
   # 資料庫連線設定
   datasource:
     # JDBC 連線網址：連本機 14321 port 的 SQL Server、使用 Unicloth 資料庫；encrypt=true 加密連線，trustServerCertificate=true 信任開發用的自簽憑證
-    url: "jdbc:sqlserver://localhost:14321;databaseName=Unicloth;encrypt=true;trustServerCertificate=true"
-    username: sa
-    password: "Eeit25@Unicloth"
+    # 上線時用環境變數 DB_URL / DB_USERNAME / DB_PASSWORD 覆蓋（例如 Azure SQL），本機沒設就用預設值連 docker 裡的資料庫
+    url: "${DB_URL:jdbc:sqlserver://localhost:14321;databaseName=Unicloth;encrypt=true;trustServerCertificate=true}"
+    username: "${DB_USERNAME:sa}"
+    password: "${DB_PASSWORD:Eeit25@Unicloth}"
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
 
     # ============================== HikariCP 連線池設定 ==============================
@@ -45,8 +50,8 @@ spring:
       ddl-auto: validate
     # false：不在整個 HTTP 請求期間一直開著資料庫 Session，Lazy 載入的關聯要在 Service 裡（交易內）就先取好
     open-in-view: false
-    # 在 console 印出 Hibernate 執行的 SQL，方便除錯
-    show-sql: true
+    # 在 console 印出 Hibernate 執行的 SQL，方便除錯；上線時設環境變數 SHOW_SQL=false 關掉
+    show-sql: ${SHOW_SQL:true}
     # 直接傳給 Hibernate 的額外設定
     properties:
       hibernate:
