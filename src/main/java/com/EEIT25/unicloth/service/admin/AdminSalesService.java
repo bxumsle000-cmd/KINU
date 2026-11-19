@@ -103,7 +103,8 @@ public class AdminSalesService {
                     })
                     .body(bodyType);
         } catch (ResourceAccessException e) {
-            log.warn("連不到 Python 分析服務：{}", e.getMessage());
+            // 最後一個參數放 e（不放進 {}），log 會印出完整錯誤堆疊和 Caused by，才看得出是「查不到主機名稱」還是「連線被拒」
+            log.warn("連不到 Python 分析服務：{}", e.getMessage(), e);
             throw new ApiException(HttpStatus.SERVICE_UNAVAILABLE, "銷售分析服務沒有啟動，請執行 docker compose up -d");
         }
     }
