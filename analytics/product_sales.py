@@ -48,7 +48,7 @@ FROM order_items oi
     JOIN orders o ON o.id = oi.order_id
     JOIN product_variants v ON v.id = oi.variant_id
 WHERE o.status NOT IN ('UNPAID', 'CANCELLED')
-  AND o.created_at >= ? AND o.created_at < ?
+  AND o.created_at >= %s AND o.created_at < %s
 GROUP BY v.product_id, oi.color, oi.size
 """
 

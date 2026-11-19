@@ -11,7 +11,7 @@ description: 從 Uniqlo 台灣官網爬商品資料與圖片進這個專案（to
 
 ```
 Uniqlo API ──爬蟲──▶ static/img/products/{slug}/{colorKey}.jpg
-                  └──▶ data/products.json ──verify──▶ DataSeeder ──▶ SQL Server
+                  └──▶ data/products.json ──verify──▶ DataSeeder ──▶ PostgreSQL
 ```
 
 相關檔案：

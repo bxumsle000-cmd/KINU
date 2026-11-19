@@ -11,12 +11,12 @@ spring:
 
   # 資料庫連線設定
   datasource:
-    # JDBC 連線網址：連本機 14321 port 的 SQL Server、使用 Unicloth 資料庫；encrypt=true 加密連線，trustServerCertificate=true 信任開發用的自簽憑證
-    # 上線時用環境變數 DB_URL / DB_USERNAME / DB_PASSWORD 覆蓋（例如 Azure SQL），本機沒設就用預設值連 docker 裡的資料庫
-    url: "${DB_URL:jdbc:sqlserver://localhost:14321;databaseName=Unicloth;encrypt=true;trustServerCertificate=true}"
-    username: "${DB_USERNAME:sa}"
+    # JDBC 連線網址：連本機 15432 port 的 PostgreSQL（docker-compose 的 db 服務）、使用 unicloth 資料庫
+    # 上線時用環境變數 DB_URL / DB_USERNAME / DB_PASSWORD 覆蓋（例如 Railway 的 Postgres），本機沒設就用預設值連 docker 裡的資料庫
+    url: "${DB_URL:jdbc:postgresql://localhost:15432/unicloth}"
+    username: "${DB_USERNAME:unicloth}"
     password: "${DB_PASSWORD:Eeit25@Unicloth}"
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    driver-class-name: org.postgresql.Driver
 
     # ============================== HikariCP 連線池設定 ==============================
     # HikariCP 是 Spring Boot 預設的連線池：事先開好幾條資料庫連線重複使用，不用每次查詢都重新連線

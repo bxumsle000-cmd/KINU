@@ -47,7 +47,9 @@ public interface MemberCouponRepository extends JpaRepository<MemberCoupon, Long
      * status 傳 MemberCouponStatus 的 name()（例如 "USED"），判斷方式跟 MemberCouponStatus.of 一樣；receivedFrom 含、receivedTo 不含。<br>
      * （status 不能直接傳 enum：MemberCouponStatus 不是任何 entity 的欄位，Hibernate 判斷不出參數的型別，查詢會失敗）<br>
      * members 和 member_profiles 沒有 JPA 關聯，所以用 left join ... on 接；沒補填資料的姓名是 null。<br>
-     * 每筆的 status 不在這裡算，由 CouponRecordResponse 的建構子用 usedAt、expireAt 算。
+     * 每筆的 status 不在這裡算，由 CouponRecordResponse 的建構子用 usedAt、expireAt 算。<br>
+     * （receivedFrom / receivedTo 的 is null 要先 cast 成 LocalDateTime：PostgreSQL 驅動傳 null 時間參數不帶型別，
+     *   不 cast 的話 Postgres 會報「could not determine data type of parameter」）
      */
     @Query("""
             select new com.EEIT25.unicloth.dto.admin.coupon.CouponRecordResponse(
@@ -65,8 +67,8 @@ public interface MemberCouponRepository extends JpaRepository<MemberCoupon, Long
                    or (:status = 'USED' and mc.usedAt is not null)
                    or (:status = 'EXPIRED' and mc.usedAt is null and mc.expireAt < :now)
                    or (:status = 'USABLE' and mc.usedAt is null and mc.expireAt >= :now))
-              and (:receivedFrom is null or mc.receivedAt >= :receivedFrom)
-              and (:receivedTo is null or mc.receivedAt < :receivedTo)
+              and (cast(:receivedFrom as LocalDateTime) is null or mc.receivedAt >= :receivedFrom)
+              and (cast(:receivedTo as LocalDateTime) is null or mc.receivedAt < :receivedTo)
             order by mc.receivedAt desc, mc.id desc
             """)
     Page<CouponRecordResponse> findRecords(@Param("keyword") String keyword,

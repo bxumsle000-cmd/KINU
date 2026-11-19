@@ -32,7 +32,7 @@ SHIP_DAYS_LABEL_LIST = ["當天", "1 天", "2 天", "3 天", "4 天", "5 天以�
 LATE_DAYS = 3   # 訂單成立超過幾天還沒出貨，算「待出貨太久」
 
 ORDER_COLUMNS = "payment_method, shipping_method, status, created_at, paid_at, shipped_at, delivered_at, completed_at"
-ORDER_SQL = f"SELECT {ORDER_COLUMNS} FROM orders WHERE created_at >= ? AND created_at < ?"
+ORDER_SQL = f"SELECT {ORDER_COLUMNS} FROM orders WHERE created_at >= %s AND created_at < %s"
 PENDING_SQL = f"SELECT {ORDER_COLUMNS} FROM orders WHERE status = 'PENDING'"
 
 

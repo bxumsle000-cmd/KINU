@@ -79,7 +79,7 @@ class SupportTicketServiceTest {
         em.flush();
 
         // created_at 只到秒，同一秒送出的兩張分不出先後，所以手動把第一張改早一點
-        em.createNativeQuery("UPDATE support_tickets SET created_at = DATEADD(MINUTE, -1, created_at) WHERE ticket_no = ?1")
+        em.createNativeQuery("UPDATE support_tickets SET created_at = created_at - INTERVAL '1 minute' WHERE ticket_no = ?1")
                 .setParameter(1, first.ticketNo())
                 .executeUpdate();
         em.clear();

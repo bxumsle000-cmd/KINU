@@ -29,7 +29,7 @@
 | 部分 | 技術 |
 |------|------|
 | 後端 | Java 21、Spring Boot、Spring Security + JWT、JPA、Flyway |
-| 資料庫 | SQL Server 2022（Docker） |
+| 資料庫 | PostgreSQL 17（Docker） |
 | 前端 | React + Vite（已 build 好放在 `src/main/resources/static/`） |
 | 銷售分析 | Python 服務（Docker 容器 `unicloth-analytics`） |
 | 金流 | 綠界 ECPay 測試環境 |
@@ -60,7 +60,7 @@ docker compose up -d
 
 會啟動三個容器：
 
-- `unicloth-db`：SQL Server 資料庫
+- `unicloth-postgres`：PostgreSQL 資料庫
 - `unicloth-tunnel`：綠界付款通知用的對外網址
 - `unicloth-analytics`：行銷後台「銷售數據」用的分析服務（第一次要建映像檔，要等幾分鐘）
 
@@ -96,13 +96,14 @@ node ecpay-callback-proxy.cjs
 
 完整說明請看 [README-ECPAY.md](README-ECPAY.md)。只用貨到付款的話不需要這一步。
 
-## 資料庫連線（SSMS）
+## 資料庫連線（DBeaver / pgAdmin）
 
 | 欄位 | 值 |
 |------|----|
-| 伺服器名稱 | `localhost,14321`（中間是逗號） |
-| 驗證 | SQL Server 驗證 |
-| 登入 | `sa` |
+| Host | `localhost` |
+| Port | `15432` |
+| Database | `unicloth` |
+| Username | `unicloth` |
 | 密碼 | `Eeit25@Unicloth` |
 
 > Spring Boot 要至少成功啟動過一次，才會建出資料表。

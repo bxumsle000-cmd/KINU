@@ -1,6 +1,6 @@
 -- ============================================================================
 -- 刪掉 DemoDataSeeder 塞的假資料。刪完重開 Spring Boot，會用今天的日期重新產生。
--- 用 SSMS 開這個檔案、選 Unicloth 資料庫後執行。
+-- 用 DBeaver / pgAdmin 連到 unicloth 資料庫，開這個檔案後執行（PostgreSQL 語法）。
 --
 -- 會一起刪掉的：
 --   - 假會員（email 是 @demo.unicloth.com）和他們的訂單、付款、折價券、購物車、追蹤清單
@@ -11,22 +11,26 @@
 --   - 示範折價券本身（重新產生時會沿用，不會重複建）
 -- ============================================================================
 
-BEGIN TRANSACTION;
+BEGIN;
 
 -- 1. 假會員的訂單（order_items 會跟著 ON DELETE CASCADE 刪掉）
-DELETE p FROM payments p
-    JOIN orders o ON o.id = p.order_id
-    JOIN members m ON m.id = o.member_id
-WHERE m.email LIKE '%@demo.unicloth.com';
+-- PostgreSQL 的 DELETE 要關聯其他表時用 USING，條件寫在 WHERE
+DELETE FROM payments p
+    USING orders o, members m
+WHERE o.id = p.order_id
+  AND m.id = o.member_id
+  AND m.email LIKE '%@demo.unicloth.com';
 
-UPDATE mc SET order_id = NULL
-FROM member_coupons mc
-    JOIN members m ON m.id = mc.member_id
-WHERE m.email LIKE '%@demo.unicloth.com';
+-- UPDATE 要關聯其他表時用 FROM
+UPDATE member_coupons mc SET order_id = NULL
+FROM members m
+WHERE m.id = mc.member_id
+  AND m.email LIKE '%@demo.unicloth.com';
 
-DELETE o FROM orders o
-    JOIN members m ON m.id = o.member_id
-WHERE m.email LIKE '%@demo.unicloth.com';
+DELETE FROM orders o
+    USING members m
+WHERE m.id = o.member_id
+  AND m.email LIKE '%@demo.unicloth.com';
 
 -- 2. 客服單
 DELETE FROM support_tickets WHERE email LIKE '%@demo.unicloth.com';
@@ -41,6 +45,6 @@ DELETE FROM members WHERE email LIKE '%@demo.unicloth.com';
 -- 5. 示範的入庫單（inventory_transaction_items 會跟著刪掉）
 DELETE FROM inventory_transactions
 WHERE type = 'RECEIVE'
-  AND note IN (N'新品到貨', N'熱銷商品補貨', N'廠商週期補貨', N'季節商品備貨');
+  AND note IN ('新品到貨', '熱銷商品補貨', '廠商週期補貨', '季節商品備貨');
 
 COMMIT;

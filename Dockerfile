@@ -9,7 +9,7 @@
 #
 # 本機試跑：
 #   docker build -t kinu-app .
-#   docker run --rm -p 8080:8080 -e DB_URL="jdbc:sqlserver://host.docker.internal:14321;databaseName=Unicloth;encrypt=true;trustServerCertificate=true" kinu-app
+#   docker run --rm -p 8080:8080 -e DB_URL="jdbc:postgresql://host.docker.internal:15432/unicloth" kinu-app
 # ============================================================================
 
 # ---------- 第 1 階段：編譯打包 ----------

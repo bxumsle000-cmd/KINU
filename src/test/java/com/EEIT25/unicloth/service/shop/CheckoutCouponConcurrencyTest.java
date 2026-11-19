@@ -95,10 +95,11 @@ class CheckoutCouponConcurrencyTest {
 
         // 兩個不同的 SKU（同一個會員的購物車不能放兩筆同 SKU），各自當一個請求要結帳的商品
         variantStockList = jdbcTemplate.queryForList("""
-                SELECT TOP 2 v.id, v.stock FROM product_variants v
+                SELECT v.id, v.stock FROM product_variants v
                 JOIN products p ON p.id = v.product_id
                 WHERE p.status = 'ON_SALE' AND v.stock >= 1
-                ORDER BY v.id""");
+                ORDER BY v.id
+                LIMIT 2""");
         assertEquals(2, variantStockList.size(), "資料庫找不到兩個可結帳的 SKU，無法測試");
     }
 

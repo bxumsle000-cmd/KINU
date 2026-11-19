@@ -21,7 +21,7 @@ COUPON_SQL = "SELECT id, code, title, type, value, min_subtotal, auto_trigger, i
 ISSUED_SQL = """
 SELECT coupon_id, received_at, expire_at, used_at
 FROM member_coupons
-WHERE received_at >= ? AND received_at < ?
+WHERE received_at >= %s AND received_at < %s
 """
 
 # 有效訂單；用券的接回是哪一種券
@@ -30,7 +30,7 @@ SELECT o.discount, o.subtotal - o.discount AS revenue, mc.coupon_id
 FROM orders o
     LEFT JOIN member_coupons mc ON mc.id = o.member_coupon_id
 WHERE o.status NOT IN ('UNPAID', 'CANCELLED')
-  AND o.created_at >= ? AND o.created_at < ?
+  AND o.created_at >= %s AND o.created_at < %s
 """
 
 

@@ -29,10 +29,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--   msSQL-jdbc 驅動   -->
+        <!--   PostgreSQL JDBC 驅動（版本由 Spring Boot 管理）；只有執行時需要，所以 scope 是 runtime   -->
         <dependency>
-            <groupId>com.microsoft.sqlserver</groupId>
-            <artifactId>mssql-jdbc</artifactId>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -54,9 +55,10 @@
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
         </dependency>
+        <!--   Flyway 對 PostgreSQL 的支援（Flyway 10 之後每種資料庫拆成獨立模組）   -->
         <dependency>
             <groupId>org.flywaydb</groupId>
-            <artifactId>flyway-sqlserver</artifactId>
+            <artifactId>flyway-database-postgresql</artifactId>
         </dependency>
         <!--   springdoc-openapi / Swagger UI   -->
         <dependency>

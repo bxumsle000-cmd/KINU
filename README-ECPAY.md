@@ -12,7 +12,7 @@
 4. 網頁跳轉綠界官方測試付款頁面。
 5. 使用綠界測試付款功能完成交易。
 6. 綠界透過 HTTPS 通知後端。
-7. 後端驗證交易通知並更新 SQL Server。
+7. 後端驗證交易通知並更新 PostgreSQL。
 8. `payments.status` 更新為 `PAID`，訂單記錄付款時間，訂單狀態變成 `PENDING`（訂單確認中）。
 
 沒付款的訂單會自動取消，並還原庫存與折價券（見「十、訂單狀態與自動取消」）。
@@ -28,7 +28,7 @@
 - Node.js、npm
 - Docker Desktop
 - VS Code 或 IntelliJ IDEA
-- SQL Server Management Studio（SSMS，可選，用來查資料庫）
+- DBeaver 或 pgAdmin（可選，用來查 PostgreSQL 資料庫）
 
 **不用另外安裝 cloudflared**，它已經放在 `docker-compose.yml` 裡，跟資料庫一起用 Docker 啟動。
 
@@ -92,16 +92,16 @@ docker compose up -d
 
 這一行會啟動：
 
-- `db`：SQL Server 資料庫
+- `postgres`：PostgreSQL 資料庫
 - `tunnel`：Cloudflare Tunnel，產生一個綠界連得到的 HTTPS 網址
 
 確認 Docker Desktop 中兩個容器都已啟動。
 
 本專題使用的資料庫連線設定為：
 
-- Server：`localhost,14321`
-- Database：`Unicloth`
-- 驗證方式：SQL Server Authentication
+- Host / Port：`localhost:15432`
+- Database：`unicloth`
+- 帳號：`unicloth`
 - 帳號與密碼：依專題組內提供的開發環境設定
 
 密碼不要放進公開 README 或 GitHub。
@@ -253,14 +253,12 @@ https://payment-stage.ecpay.com.tw/
 
 ---
 
-## 九、檢查 SQL Server 付款結果
+## 九、檢查資料庫付款結果
 
-開啟 SSMS，連接專題資料庫，執行：
+開啟 DBeaver 或 pgAdmin，連接專題資料庫（unicloth），執行：
 
 ```sql
-USE Unicloth;
-
-SELECT TOP (10)
+SELECT
     o.id,
     o.order_no,
     o.status AS order_status,
@@ -268,9 +266,10 @@ SELECT TOP (10)
     p.status AS payment_status,
     p.ecpay_trade_no,
     p.paid_at AS payment_paid_at
-FROM dbo.orders o
-JOIN dbo.payments p ON p.order_id = o.id
-ORDER BY p.id DESC;
+FROM orders o
+JOIN payments p ON p.order_id = o.id
+ORDER BY p.id DESC
+LIMIT 10;
 ```
 
 付款成功應該看到：
@@ -412,11 +411,11 @@ node ecpay-callback-proxy.cjs
 每次測試時依序啟動：
 
 1. Docker Desktop。
-2. `docker compose up -d`：啟動 SQL Server 和 tunnel。
+2. `docker compose up -d`：啟動 PostgreSQL 和 tunnel。
 3. `node ecpay-callback-proxy.cjs`：啟動 8787，視窗不要關。
 4. Spring Boot：`mvnw.cmd spring-boot:run`（不用設定 `ECPAY_RETURN_URL`）。
 5. React：在 `frontend` 執行 `npm run dev`，開 http://localhost:8080/ 。
 6. 瀏覽器：登入網站進行測試付款。
-7. SSMS 或後端 log：確認 `payments.status = PAID`、`orders.paid_at` 有時間。
+7. DBeaver / pgAdmin 或後端 log：確認 `payments.status = PAID`、`orders.paid_at` 有時間。
 
 **所有服務必須保持執行，才能完成整套付款通知流程。**

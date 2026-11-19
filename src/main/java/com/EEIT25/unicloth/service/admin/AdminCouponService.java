@@ -268,7 +268,7 @@ public class AdminCouponService {
         LocalDateTime receivedToTime = receivedTo == null ? null : receivedTo.plusDays(1).atStartOfDay();
 
         String statusName = status == null ? null : status.name();
-        // 排序寫死在查詢裡；pageable 帶了 sort 的話會再接一次 order by，SQL Server 會報錯，所以只取頁碼和筆數
+        // 排序寫死在查詢裡；pageable 帶了 sort 的話會再接一次 order by，SQL 會變成兩個 order by 而報錯，所以只取頁碼和筆數
         Pageable pageOnly = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize());
         return memberCouponRepository.findRecords(keywordPattern, couponId, source, statusName,
                 receivedFromTime, receivedToTime, LocalDateTime.now(), pageOnly);

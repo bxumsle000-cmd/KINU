@@ -35,7 +35,7 @@ SELECT CAST(o.created_at AS date)   AS day,
 FROM orders o
     JOIN (SELECT order_id, SUM(qty) AS items FROM order_items GROUP BY order_id) i ON i.order_id = o.id
 WHERE o.status NOT IN ('UNPAID', 'CANCELLED')
-  AND o.created_at >= ? AND o.created_at < ?
+  AND o.created_at >= %s AND o.created_at < %s
 GROUP BY CAST(o.created_at AS date)
 """
 

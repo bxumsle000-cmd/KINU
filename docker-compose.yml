@@ -8,11 +8,11 @@
 #     docker compose up -d
 #     然後 IDEA 按 Run
 #
-# 用 SSMS 連進容器裡的資料庫
-#     伺服器名稱：localhost,14321
-#     驗證：SQL Server 驗證
-#     登入：sa
-#     密碼：見下方 Eeit25@Unicloth
+# 用 DBeaver / pgAdmin 連進容器裡的資料庫（PostgreSQL）
+#     Host：localhost   Port：15432
+#     Database：unicloth
+#     Username：unicloth
+#     Password：見下方 Eeit25@Unicloth
 # ============================================================================
 
 # 固定專案名稱：不管從哪個資料夾（Unicloth、Unicloth-cash…）執行，都是同一組容器，
@@ -21,51 +21,31 @@ name: unicloth
 
 services:
   # --------------------------------------------------------------------------
-  # 資料庫：SQL Server 2022
+  # 資料庫：PostgreSQL 17
+  #
+  # POSTGRES_DB 會在第一次啟動時自動建好 unicloth 資料庫，
+  # 資料表再由 Spring Boot 啟動時的 Flyway 建立（db/migration/V1__init.sql）。
   # --------------------------------------------------------------------------
-  db:
-    image: mcr.microsoft.com/mssql/server:2022-latest
+  postgres:
+    image: postgres:17
     # 容器名稱是「整台電腦共用」的，不分專案，所以一定要跟其他專案錯開。
-    container_name: unicloth-db
-    # 左邊是你電腦的埠號，右邊是容器內的
+    container_name: unicloth-postgres
+    # 左邊是你電腦的埠號，右邊是容器內的（Postgres 預設 5432；用 15432 避免跟電腦上其他 Postgres 衝突）
     ports:
-      - "14321:1433"
+      - "15432:5432"
     environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "Eeit25@Unicloth"
-      MSSQL_PID: "Developer"          # 開發用授權，免費
+      POSTGRES_DB: "unicloth"
+      POSTGRES_USER: "unicloth"
+      POSTGRES_PASSWORD: "Eeit25@Unicloth"
     volumes:
-      - mssql-data:/var/opt/mssql     # 具名 volume，資料才不會隨容器消失
+      - pg-data:/var/lib/postgresql/data   # 具名 volume，資料才不會隨容器消失
     restart: unless-stopped
     healthcheck:
-      # 讓 compose 知道「資料庫真的可以接受連線了」，不然 app 會太早啟動而連不上
-      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P \"$${MSSQL_SA_PASSWORD}\" -C -Q 'SELECT 1' || exit 1"]
+      # 讓 compose 知道「資料庫真的可以接受連線了」，不然 analytics 會太早啟動而連不上
+      test: ["CMD-SHELL", "pg_isready -U unicloth -d unicloth"]
       interval: 5s
       timeout: 5s
       retries: 30
-      start_period: 20s
-
-  # --------------------------------------------------------------------------
-  # 建立資料庫：跑一次就結束的一次性容器
-  #
-  # 為什麼需要這個？因為 Flyway 建得了「資料表」，建不了「資料庫」本身；
-  # 而 SQL Server 的官方 image 不像 MySQL/Postgres 有環境變數可以自動建 DB，
-  # 所以要自己補這一步。
-  # --------------------------------------------------------------------------
-  db-init:
-    image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: unicloth-db-init
-    depends_on:
-      db:
-        condition: service_healthy    # 等 db 通過上面的 healthcheck 才開始
-    environment:
-      MSSQL_SA_PASSWORD: "Eeit25@Unicloth"
-    entrypoint: ["/bin/bash", "-c"]
-    command:
-      - >
-        /opt/mssql-tools18/bin/sqlcmd -S db -U sa -P "$${MSSQL_SA_PASSWORD}" -C
-        -Q "IF DB_ID('Unicloth') IS NULL CREATE DATABASE Unicloth;"
-    restart: "no"                     # 跑完就結束，不要重啟
 
   # --------------------------------------------------------------------------
   # 綠界付款通知用的 HTTPS 網址（Cloudflare Quick Tunnel）
@@ -94,23 +74,23 @@ services:
   # 銷售分析服務（Python，analytics/main.py）
   #
   # 行銷後台「銷售數據」的數字由它計算：React → Spring Boot（擋權限）→ 這裡。
-  # 第一次會先建映像檔（下載 Python 和微軟的 ODBC 驅動程式，要幾分鐘）。
+  # 第一次會先建映像檔（下載 Python 和套件，要一點時間）。
   # 改了 analytics/ 的程式要重建才會生效：docker compose up -d --build analytics
   # --------------------------------------------------------------------------
   analytics:
     build: ./analytics
     container_name: unicloth-analytics
     depends_on:
-      db:
+      postgres:
         condition: service_healthy
     environment:
       ANALYTICS_HOST: "0.0.0.0"       # 容器裡要聽 0.0.0.0，下面的 ports 才轉得進來
-      DB_HOST: "db"                   # 容器之間用服務名稱連，不是 localhost
-      DB_PORT: "1433"                 # 容器內的埠號，不是你電腦的 14321
+      DB_HOST: "postgres"             # 容器之間用服務名稱連，不是 localhost
+      DB_PORT: "5432"                 # 容器內的埠號，不是你電腦的 15432
       DB_PASSWORD: "Eeit25@Unicloth"
     ports:
       - "127.0.0.1:8000:8000"         # 只開給本機，Spring Boot 用 http://127.0.0.1:8000 連
     restart: unless-stopped
 
 volumes:
-  mssql-data:
+  pg-data:

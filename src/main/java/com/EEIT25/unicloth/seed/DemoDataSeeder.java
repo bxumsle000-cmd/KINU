@@ -376,7 +376,7 @@ public class DemoDataSeeder implements CommandLineRunner {
     /** 找某個部門 id 最小的員工（V1 migration 建的測試員），沒有回傳 null */
     private Long findStaffId(String department) {
         List<Long> idList = jdbcTemplate.queryForList(
-                "SELECT TOP 1 id FROM staff WHERE department = ? ORDER BY id", Long.class, department);
+                "SELECT id FROM staff WHERE department = ? ORDER BY id LIMIT 1", Long.class, department);
         return idList.isEmpty() ? null : idList.get(0);
     }
 
@@ -428,7 +428,7 @@ public class DemoDataSeeder implements CommandLineRunner {
         member.address = demo.city() + ROAD_LIST.get(random.nextInt(ROAD_LIST.size()))
                 + (1 + random.nextInt(300)) + "號" + (2 + random.nextInt(12)) + "樓";
         member.id = jdbcTemplate.queryForObject(
-                "INSERT INTO members (email, status, created_at) OUTPUT INSERTED.id VALUES (?, 'ACTIVE', ?)",
+                "INSERT INTO members (email, status, created_at) VALUES (?, 'ACTIVE', ?) RETURNING id",
                 Long.class, member.email, member.registeredAt);
         jdbcTemplate.update(
                 "INSERT INTO member_profiles (member_id, name, phone, gender, birthday, address) VALUES (?, ?, ?, ?, ?, ?)",
@@ -440,8 +440,7 @@ public class DemoDataSeeder implements CommandLineRunner {
     private HeldCoupon issueCoupon(MemberState member, CouponInfo coupon, LocalDateTime receivedAt, String source) {
         Long id = jdbcTemplate.queryForObject("""
                 INSERT INTO member_coupons (member_id, coupon_id, expire_at, used_at, order_id, received_at, source)
-                OUTPUT INSERTED.id
-                VALUES (?, ?, ?, NULL, NULL, ?, ?)
+                VALUES (?, ?, ?, NULL, NULL, ?, ?) RETURNING id
                 """, Long.class, member.id, coupon.id(), receivedAt.plusDays(coupon.validDays()), receivedAt, source);
         HeldCoupon held = new HeldCoupon(id, coupon, receivedAt);
         member.heldCouponList.add(held);
@@ -495,8 +494,7 @@ public class DemoDataSeeder implements CommandLineRunner {
         LocalDateTime sentAt = sent ? scheduledAt.plusSeconds(5 + random.nextInt(50)) : null;
         Long scheduleId = jdbcTemplate.queryForObject("""
                 INSERT INTO coupon_schedules (coupon_id, target_all, scheduled_at, status, sent_at, sent_count, created_by, created_at)
-                OUTPUT INSERTED.id
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?) RETURNING id
                 """, Long.class, coupon.id(), targetAll, scheduledAt, status, sentAt,
                 sent ? recipientList.size() : null, mktStaffId, createdAt);
 
@@ -702,8 +700,7 @@ public class DemoDataSeeder implements CommandLineRunner {
                                     subtotal, discount, shipping_fee, total, member_coupon_id,
                                     paid_at, shipped_at, delivered_at, completed_at, created_at,
                                     shipping_carrier, tracking_number)
-                OUTPUT INSERTED.id
-                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id
                 """, Long.class,
                 orderNo, member.id, status.name(), demo.name(), member.phone, member.email,
                 shipping.name(), shippingAddress, payment.name(), note,
@@ -1065,8 +1062,7 @@ public class DemoDataSeeder implements CommandLineRunner {
             }
             Long transactionId = jdbcTemplate.queryForObject("""
                     INSERT INTO inventory_transactions (type, note, staff_id, created_at)
-                    OUTPUT INSERTED.id
-                    VALUES ('RECEIVE', ?, ?, ?)
+                    VALUES ('RECEIVE', ?, ?, ?) RETURNING id
                     """, Long.class, RECEIVE_NOTE_LIST.get(random.nextInt(RECEIVE_NOTE_LIST.size())), productStaffId, createdAt);
 
             List<Object[]> argsList = new ArrayList<>();
