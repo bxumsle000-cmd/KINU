@@ -1,0 +1,21 @@
+# docker build 時「不要」傳進去的檔案：越少，build 越快
+# Dockerfile 只用到 mvnw、pom.xml、.mvn/、src/，其他都排除
+
+.git
+.idea
+.vscode
+.claude
+target
+
+# 前端原始碼不需要（build 好的檔案已經在 src/main/resources/static/）
+frontend
+
+# 其他服務或文件，跟 Spring Boot 映像檔無關
+analytics
+docs
+tools
+sample
+structure
+*.md
+docker-compose.yml
+ecpay-callback-proxy.cjs
