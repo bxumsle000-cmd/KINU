@@ -1,5 +1,8 @@
 package com.EEIT25.unicloth.security.jwt;
 
+import com.EEIT25.unicloth.entity.Staff;
+import com.EEIT25.unicloth.enums.staff.StaffStatus;
+import com.EEIT25.unicloth.repository.staff.StaffRepository;
 import com.EEIT25.unicloth.security.CurrentMember;
 import com.EEIT25.unicloth.security.CurrentStaff;
 import io.jsonwebtoken.JwtException;
@@ -26,7 +29,8 @@ import java.util.List;
  *   <li>讀 {@code Authorization: Bearer <token>}</li>
  *   <li>沒帶、格式不對、驗證失敗（過期、被竄改）→ 什麼都不做，直接放行</li>
  *   <li>驗證成功、是會員 token → 把會員 id 放進 SecurityContext，之後 {@link CurrentMember} 就能取得</li>
- *   <li>驗證成功、是員工 token → 放 {@link StaffPrincipal}，之後 {@link CurrentStaff} 就能取得</li>
+ *   <li>驗證成功、是員工 token → 查資料庫確認員工存在且 ACTIVE，才放 {@link StaffPrincipal}（部門用資料庫的值），之後 {@link CurrentStaff} 就能取得；
+ *       被停用的員工就算 token 還沒過期，也會被當成沒登入</li>
  * </ol>
  * 這個 Filter 本身<b>從不</b>回 401，它只負責「辨識身分」；「要不要擋」交給 {@link SecurityConfig} 的授權規則，
  * 這樣看商品這些不用登入的 API 才能正常放行。
@@ -40,6 +44,7 @@ public class JwtAuthFilter extends OncePerRequestFilter {
     private static final String BEARER_PREFIX = "Bearer ";
 
     private final JwtService jwtService;
+    private final StaffRepository staffRepository;
 
     @Override
     protected void doFilterInternal(HttpServletRequest request,
@@ -51,11 +56,19 @@ public class JwtAuthFilter extends OncePerRequestFilter {
             try {
                 JwtService.ParsedToken parsed = jwtService.parse(token);
                 if (parsed.staff()) {
-                    // ROLE_STAFF：能進後台；ROLE_部門（例如 ROLE_PRODUCT）：能用該部門的 API
-                    setAuthenticated(new StaffPrincipal(parsed.id(), parsed.department()),
-                            List.of(new SimpleGrantedAuthority("ROLE_STAFF"),
-                                    new SimpleGrantedAuthority("ROLE_" + parsed.department().name())),
-                            request);
+                    // token 發出去就收不回來，所以每次都回資料庫確認員工還在、而且沒被停用；
+                    // 不是的話什麼都不放，等同沒登入（後台 API 回 401）
+                    Staff staff = staffRepository.findById(parsed.id()).orElse(null);
+                    if (staff != null && staff.getStatus() == StaffStatus.ACTIVE) {
+                        // 部門用資料庫的值，不用 token 裡的：部門被調整時，舊 token 也會立刻套用新部門
+                        // ROLE_STAFF：能進後台；ROLE_部門（例如 ROLE_PRODUCT）：能用該部門的 API
+                        setAuthenticated(new StaffPrincipal(staff.getId(), staff.getDepartment()),
+                                List.of(new SimpleGrantedAuthority("ROLE_STAFF"),
+                                        new SimpleGrantedAuthority("ROLE_" + staff.getDepartment().name())),
+                                request);
+                    } else {
+                        log.debug("員工帳號不存在或已停用，忽略 token：staffId={}", parsed.id());
+                    }
                 } else {
                     setAuthenticated(parsed.id(), List.of(new SimpleGrantedAuthority("ROLE_MEMBER")), request);
                 }

@@ -1,6 +1,7 @@
 package com.EEIT25.unicloth.security.jwt;
 
 import com.EEIT25.unicloth.repository.member.MemberProfileRepository;
+import com.EEIT25.unicloth.repository.staff.StaffRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -41,6 +42,7 @@ public class SecurityConfig {
 
     private final JwtService jwtService;
     private final MemberProfileRepository memberProfileRepository;
+    private final StaffRepository staffRepository;
 
     /** 跟 GlobalExceptionHandler 回的格式一樣，前端 api.js 會讀 message 顯示 */
     private static final String UNAUTHORIZED_BODY = "{\"code\":401,\"message\":\"尚未登入或登入已失效\"}";
@@ -99,7 +101,7 @@ public class SecurityConfig {
                 )
 
                 // 掛在「表單登入 Filter」的位置之前，讓授權規則判斷時 SecurityContext 已經有身分
-                .addFilterBefore(new JwtAuthFilter(jwtService), UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(new JwtAuthFilter(jwtService, staffRepository), UsernamePasswordAuthenticationFilter.class);
 
         return http.build();
     }

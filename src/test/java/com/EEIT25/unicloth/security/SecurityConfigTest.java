@@ -1,6 +1,8 @@
 package com.EEIT25.unicloth.security;
 
+import com.EEIT25.unicloth.entity.Staff;
 import com.EEIT25.unicloth.enums.staff.Department;
+import com.EEIT25.unicloth.enums.staff.StaffStatus;
 import com.EEIT25.unicloth.repository.member.MemberProfileRepository;
 import com.EEIT25.unicloth.repository.member.MemberRepository;
 import com.EEIT25.unicloth.repository.staff.StaffRepository;
@@ -19,6 +21,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -46,7 +50,7 @@ class SecurityConfigTest {
     @MockitoBean MemberRepository memberRepository;
     // SecurityConfig 用它判斷「補填過資料沒」；預設每個會員都填過，要測沒填的情況再個別改
     @MockitoBean MemberProfileRepository memberProfileRepository;
-    // CurrentStaff 需要它；這裡只測 getCurrentId()，不會真的查資料庫
+    // JwtAuthFilter 用它確認員工存在且沒被停用（staffToken() 會順便設定好）；CurrentStaff 也需要它
     @MockitoBean StaffRepository staffRepository;
 
     @BeforeEach
@@ -77,8 +81,21 @@ class SecurityConfigTest {
         @GetMapping("/api/admin/whoami") Long adminWhoami() { return currentStaff.getCurrentId(); }
     }
 
+    /** 商品部員工的 token；同時假裝資料庫裡有這位 ACTIVE 的員工（JwtAuthFilter 會回資料庫確認） */
     private String staffToken(Long staffId) {
-        return jwtService.generateStaffToken(staffId, Department.PRODUCT);
+        return staffToken(staffId, Department.PRODUCT);
+    }
+
+    private String staffToken(Long staffId, Department department) {
+        givenStaff(staffId, department, StaffStatus.ACTIVE);
+        return jwtService.generateStaffToken(staffId, department);
+    }
+
+    /** 假裝資料庫裡有這位員工 */
+    private void givenStaff(Long staffId, Department department, StaffStatus status) {
+        when(staffRepository.findById(staffId)).thenReturn(Optional.of(Staff.builder()
+                .id(staffId).account("staff" + staffId).passwordHash("x").name("測試員工")
+                .department(department).status(status).build()));
     }
 
     // ===== 員工 / 後台 =====
@@ -114,7 +131,7 @@ class SecurityConfigTest {
 
     @Test
     void 部門API_ADMIN員工_所有部門都能用() throws Exception {
-        String token = jwtService.generateStaffToken(5L, Department.ADMIN);
+        String token = staffToken(5L, Department.ADMIN);
 
         for (String path : new String[]{"/api/admin/product/items", "/api/admin/mkt/coupons", "/api/admin/admin/staff"}) {
             mockMvc.perform(get(path).header("Authorization", "Bearer " + token))
@@ -149,6 +166,36 @@ class SecurityConfigTest {
         }
         mockMvc.perform(put("/api/member/me/complete-profile").header("Authorization", "Bearer " + token))
                 .andExpect(status().isForbidden());
+    }
+
+    @Test
+    void 員工被停用_token還沒過期_後台API一樣401() throws Exception {
+        String token = staffToken(3L);
+        givenStaff(3L, Department.PRODUCT, StaffStatus.DISABLED);
+
+        mockMvc.perform(get("/api/admin/product/items").header("Authorization", "Bearer " + token))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    void 員工已經不存在_後台API401() throws Exception {
+        String token = jwtService.generateStaffToken(99L, Department.ADMIN);
+        when(staffRepository.findById(99L)).thenReturn(Optional.empty());
+
+        mockMvc.perform(get("/api/admin/product/items").header("Authorization", "Bearer " + token))
+                .andExpect(status().isUnauthorized());
+    }
+
+    @Test
+    void 部門以資料庫為準_token裡的舊部門不算() throws Exception {
+        // token 發的時候是 ADMIN，之後資料庫改成商品部：不能再用 ADMIN 的 API，商品部的可以
+        String token = jwtService.generateStaffToken(7L, Department.ADMIN);
+        givenStaff(7L, Department.PRODUCT, StaffStatus.ACTIVE);
+
+        mockMvc.perform(get("/api/admin/admin/staff").header("Authorization", "Bearer " + token))
+                .andExpect(status().isForbidden());
+        mockMvc.perform(get("/api/admin/product/items").header("Authorization", "Bearer " + token))
+                .andExpect(status().isOk());
     }
 
     @Test
