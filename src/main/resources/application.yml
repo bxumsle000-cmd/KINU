@@ -68,6 +68,15 @@ spring:
         # 當 Controller 回傳 Page 時，序列化前自動幫我包成 PagedModel（JSON 會是 content + page 的格式）
         serialization-mode: via_dto
 
+# ============================== Swagger UI（springdoc） ==============================
+# 本機沒設就開著方便測 API；正式環境（Railway）設環境變數 SWAGGER_ENABLED=false 關掉，
+# 關掉後 /swagger-ui 和 /v3/api-docs 都打不開，外人看不到整份 API 清單
+springdoc:
+  api-docs:
+    enabled: ${SWAGGER_ENABLED:true}
+  swagger-ui:
+    enabled: ${SWAGGER_ENABLED:true}
+
 # ============================== JWT ==============================
 # 以下是專案自訂的設定，由 JwtProperties 讀取
 jwt:
