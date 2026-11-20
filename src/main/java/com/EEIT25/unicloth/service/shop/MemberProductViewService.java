@@ -33,6 +33,12 @@ public class MemberProductViewService {
             return;
         }
 
+        // token 裡的會員在資料庫找不到（例如資料庫重建過、帳號被刪掉），就當成沒登入，不記錄。
+        // 不擋的話，下面寫入會違反外鍵 fk_member_product_views_member，整個商品頁會回 500。
+        if (!memberRepository.existsById(memberId)) {
+            return;
+        }
+
         LocalDateTime viewedAt =
                 LocalDateTime.now();
 
