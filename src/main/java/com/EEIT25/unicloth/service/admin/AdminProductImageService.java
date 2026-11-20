@@ -4,6 +4,7 @@ import com.EEIT25.unicloth.entity.Product;
 import com.EEIT25.unicloth.exception.ApiException;
 import com.EEIT25.unicloth.repository.product.ProductRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -27,9 +28,14 @@ public class AdminProductImageService {
     );
     private final ProductRepository productRepository;
 
+    // 上傳圖片的資料夾，從 application.yml 的 app.upload.product-image-dir 讀
+    // （@RequiredArgsConstructor 只處理 final 欄位，所以這個欄位不加 final，用 @Value 直接注入）
+    @Value("${app.upload.product-image-dir}")
+    private String productImageDir;
+
     /**
      * 儲存商品顏色圖片，並回傳瀏覽器可讀取的網址。
-     * 圖片會放進 static/img/products 商品圖片目錄。
+     * 圖片會放進 app.upload.product-image-dir 設定的資料夾（本機預設 static/img/products）。
      */
     public String saveProductImage(
             Long productId,
@@ -52,14 +58,9 @@ public class AdminProductImageService {
         String normalizedColorCode = normalizeColorCode(colorCode);
         String extension = resolveExtension(image.getContentType());
 
-        Path rootDirectory = Paths.get(
-                "src",
-                "main",
-                "resources",
-                "static",
-                "img",
-                "products"
-        ).toAbsolutePath().normalize();
+        Path rootDirectory = Paths.get(productImageDir)
+                .toAbsolutePath()
+                .normalize();
 
         Path productDirectory = rootDirectory
                 .resolve(product.getSlug())

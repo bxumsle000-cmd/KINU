@@ -94,6 +94,11 @@ app:
     products: true
     # true：啟動時塞展示用的假資料（30 位會員、往前 15 個月的訂單、折價券、客服單、入庫紀錄…），已經塞過就跳過（見 DemoDataSeeder）
     demo-data: true
+  # 後台上傳的商品圖片要存在哪個資料夾（見 AdminProductImageService、WebResourceConfig）
+  upload:
+    # 本機沒設就存在專案的 static/img/products；
+    # Railway 要設環境變數 PRODUCT_IMAGE_DIR 指到 Volume 的掛載路徑（例如 /data/products），重新部署圖片才不會不見
+    product-image-dir: "${PRODUCT_IMAGE_DIR:src/main/resources/static/img/products}"
 
 # ============================== 綠界測試金流 ==============================
 # 綠界 ECPay 金流設定，由 EcpayService、EcpayCallbackService、EcpayReturnUrlResolver 讀取
