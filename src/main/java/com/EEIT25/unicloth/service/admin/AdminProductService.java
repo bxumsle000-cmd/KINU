@@ -417,6 +417,12 @@ public class AdminProductService {
         }
 
         product.setStatus(newStatus);
+
+        // 手動下架時，把預定下架時間一起清掉，
+        // 不然之後重新上架，舊的時間已經過了，排程會馬上又把它下架
+        if (newStatus == ProductStatus.OFF_SHELF) {
+            product.setScheduledOffAt(null);
+        }
     }
 
     /**

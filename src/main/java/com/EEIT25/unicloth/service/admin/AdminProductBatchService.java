@@ -42,6 +42,11 @@ public class AdminProductBatchService {
 
         for (Product product : products) {
             product.setStatus(request.status());
+
+            // 手動下架時清掉預定下架時間，原因同 AdminProductService.updateStatus
+            if (request.status() == ProductStatus.OFF_SHELF) {
+                product.setScheduledOffAt(null);
+            }
         }
     }
 
