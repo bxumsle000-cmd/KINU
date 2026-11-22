@@ -15,7 +15,7 @@ analytics
 docs
 tools
 sample
-structure
+docs/structure
 *.md
 docker-compose.yml
 ecpay-callback-proxy.cjs

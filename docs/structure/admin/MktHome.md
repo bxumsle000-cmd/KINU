@@ -2,6 +2,8 @@
 
 `pages/admin/MktHome.jsx`（`/admin/mkt`）：行銷人員的折價券管理和銷售數據，側邊選單切換子頁面
 
+銷售數據的五個子頁面（SalesOverviewPage 到 CouponPerformancePage）用 `lazy()` 載入：它們用到 Plotly（約 4 MB），點進去才下載，載入時顯示「載入中…」。
+
 ```
 MktHome
 ├─ SideMenu
@@ -18,7 +20,10 @@ MktHome
 │   ├─ IssueForm
 │   │   └─ MemberPicker
 │   └─ ScheduleTable
+│       └─ Pagination
 ├─ RecordPage
+│   └─ RecordTable
+│       └─ Pagination
 ├─ SalesOverviewPage
 │   ├─ ToggleButtons
 │   ├─ SalesKpiCards
@@ -78,8 +83,10 @@ MktHome
 | IssuePage | `component/admin/mkt/` | 發券給會員子頁面：上面發券表單，下面預約發送紀錄 |
 | IssueForm | `component/admin/mkt/` | 選券、發給誰（指定／全部會員）、立即或預約發送 |
 | MemberPicker | `component/admin/mkt/` | 搜尋會員、複選，顯示已選幾位（選「指定會員」才顯示） |
-| ScheduleTable | `component/admin/mkt/` | 預約發送表格，依狀態篩選，等待中的可以取消預約 |
-| RecordPage | `component/admin/mkt/` | 發券紀錄子頁面：篩選列（會員、折價券、來源、狀態、發券日期區間）、顯示共幾筆、紀錄表格（只顯示，沒有按鈕） |
+| ScheduleTable | `component/admin/mkt/` | 預約發送表格，依狀態篩選、換頁，等待中的可以取消預約，有「重新整理」按鈕 |
+| RecordPage | `component/admin/mkt/` | 發券紀錄子頁面：篩選列（會員、折價券、來源、狀態、發券日期區間），篩選和分頁都在後端做 |
+| RecordTable | `component/admin/mkt/` | 發券紀錄表格：顯示共幾筆，每列是會員拿到的一張券（只顯示，沒有按鈕），下面分頁 |
+| Pagination | `component/common/` | 分頁（前後台共用） |
 | SalesOverviewPage | `component/admin/mkt/` | 營收總覽子頁面：期間按鈕（7 天／30 天／90 天／12 個月）；數字由 Python 算（React → Spring Boot → `analytics/`），Python 跟著 `docker compose up -d` 一起啟動 |
 | SalesKpiCards | `component/admin/mkt/` | 四張指標卡片（營業額、客單價、銷售件數、折扣總額），對比上一期漲跌 |
 | RevenueChart | `component/admin/mkt/` | 營業額趨勢圖（Plotly），實線本期、虛線上一期 |
