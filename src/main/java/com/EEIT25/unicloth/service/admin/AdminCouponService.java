@@ -1,6 +1,7 @@
 package com.EEIT25.unicloth.service.admin;
 
 import com.EEIT25.unicloth.dto.admin.coupon.AdminCouponResponse;
+import com.EEIT25.unicloth.dto.admin.coupon.CouponRecordFilter;
 import com.EEIT25.unicloth.dto.admin.coupon.CouponRecordResponse;
 import com.EEIT25.unicloth.dto.admin.coupon.CouponScheduleResponse;
 import com.EEIT25.unicloth.dto.admin.coupon.CreateCouponRequest;
@@ -47,7 +48,7 @@ import java.util.List;
  * - {@link #getSchedules(CouponScheduleStatus, Pageable)}：預約發送紀錄（分頁）<br><br>
  * - {@link #cancelSchedule(Long)}：取消預約發送<br><br>
  * - {@link #sendBirthdayCoupons()}：生日禮自動發送（每天檢查兩次，發給這個月還沒領過的當月壽星）<br><br>
- * - {@link #getRecords(String, Long, CouponSource, MemberCouponStatus, LocalDate, LocalDate, Pageable)}：發券紀錄（分頁）
+ * - {@link #getRecords(CouponRecordFilter, Pageable)}：發券紀錄（分頁）
  */
 @Service
 @RequiredArgsConstructor
@@ -247,14 +248,17 @@ public class AdminCouponService {
 
     /**
      * 發券紀錄：每張發出去的券一筆（手動發的和自動發的都有），發券時間新的排前面，分頁查詢。<br>
-     * 每個篩選是 null 就不篩（keyword 空白也不篩）：<br>
+     * 篩選條件包在 {@link CouponRecordFilter}，每個是 null 就不篩（keyword 空白也不篩）：<br>
      * - keyword：比對會員姓名或 email（不分大小寫、部分符合就算）<br>
      * - status：可使用 / 已使用 / 已過期，判斷方式見 {@link MemberCouponStatus#of}<br>
      * - receivedFrom、receivedTo：發券日期的區間，兩端都含，只填一邊也可以
      */
     @Transactional(readOnly = true)
-    public Page<CouponRecordResponse> getRecords(String keyword, Long couponId, CouponSource source, MemberCouponStatus status,
-                                                 LocalDate receivedFrom, LocalDate receivedTo, Pageable pageable){
+    public Page<CouponRecordResponse> getRecords(CouponRecordFilter filter, Pageable pageable){
+        String keyword = filter.keyword();
+        MemberCouponStatus status = filter.status();
+        LocalDate receivedFrom = filter.receivedFrom();
+        LocalDate receivedTo = filter.receivedTo();
         if (receivedFrom != null && receivedTo != null && receivedFrom.isAfter(receivedTo)) {
             throw ApiException.badRequest("開始日期不能晚於結束日期");
         }
@@ -270,7 +274,7 @@ public class AdminCouponService {
         String statusName = status == null ? null : status.name();
         // 排序寫死在查詢裡；pageable 帶了 sort 的話會再接一次 order by，SQL 會變成兩個 order by 而報錯，所以只取頁碼和筆數
         Pageable pageOnly = PageRequest.of(pageable.getPageNumber(), pageable.getPageSize());
-        return memberCouponRepository.findRecords(keywordPattern, couponId, source, statusName,
+        return memberCouponRepository.findRecords(keywordPattern, filter.couponId(), filter.source(), statusName,
                 receivedFromTime, receivedToTime, LocalDateTime.now(), pageOnly);
     }
 

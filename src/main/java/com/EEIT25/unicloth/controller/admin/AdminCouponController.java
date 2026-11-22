@@ -1,14 +1,13 @@
 package com.EEIT25.unicloth.controller.admin;
 
 import com.EEIT25.unicloth.dto.admin.coupon.AdminCouponResponse;
+import com.EEIT25.unicloth.dto.admin.coupon.CouponRecordFilter;
 import com.EEIT25.unicloth.dto.admin.coupon.CouponRecordResponse;
 import com.EEIT25.unicloth.dto.admin.coupon.CouponScheduleResponse;
 import com.EEIT25.unicloth.dto.admin.coupon.CreateCouponRequest;
 import com.EEIT25.unicloth.dto.admin.coupon.GrantCouponRequest;
 import com.EEIT25.unicloth.dto.admin.coupon.UpdateCouponRequest;
 import com.EEIT25.unicloth.enums.coupon.CouponScheduleStatus;
-import com.EEIT25.unicloth.enums.coupon.CouponSource;
-import com.EEIT25.unicloth.enums.coupon.MemberCouponStatus;
 import com.EEIT25.unicloth.service.admin.AdminCouponService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -17,11 +16,9 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -101,13 +98,8 @@ public class AdminCouponController {
      */
     @GetMapping("/records")
     public Page<CouponRecordResponse> getRecords(
-            @RequestParam(required = false) String keyword,
-            @RequestParam(required = false) Long couponId,
-            @RequestParam(required = false) CouponSource source,
-            @RequestParam(required = false) MemberCouponStatus status,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate receivedFrom,
-            @RequestParam(required = false) @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate receivedTo,
+            @ParameterObject CouponRecordFilter filter,
             @ParameterObject @PageableDefault(size = 10) Pageable pageable) {
-        return adminCouponService.getRecords(keyword, couponId, source, status, receivedFrom, receivedTo, pageable);
+        return adminCouponService.getRecords(filter, pageable);
     }
 }
