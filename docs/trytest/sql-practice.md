@@ -139,3 +139,73 @@
 - `Product.newArrival`（`boolean`）、`Product.status`、`Product.id`
 - `ProductVariant.skuCode`（`String`）
 - `Order.status`（`OrderStatus`）
+
+---
+
+## 第 6 題：結帳成功後清空購物車（`delete`）
+
+### 情境
+
+會員結帳成功後，購物車裡的東西要全部清掉。
+
+### 需求
+
+- 刪除**某位會員**的所有購物車項目
+- 用 `deleteBy` 開頭（`removeBy` 也行，意思一樣）
+- 不需要回傳值
+
+### 寫在哪
+
+`CartItemRepository`
+
+### 會用到的屬性
+
+- `CartItem.member`（`Member`，多對一）→ `Member.id`（`Long`）
+
+> 想一想：呼叫這個方法的 Service 方法上，少了什麼註解會報錯？
+
+---
+
+## 第 7 題：登入時用 email 找會員（`get` / `read` / `query` / `search`）
+
+### 情境
+
+除了 `findBy`，Spring Data 還認得 `getBy`、`readBy`、`queryBy`、`searchBy`，效果和 `findBy` 一模一樣。
+
+### 需求
+
+- 用 `email` 精準比對，找出**一筆**會員
+- 回傳型別要能表達「可能找不到」
+- **不准用 `find` 開頭**，從上面四個挑一個
+
+### 寫在哪
+
+`MemberRepository`
+
+### 會用到的屬性
+
+- `Member.email`（`String`）
+
+---
+
+## 第 8 題：後台匯出某狀態的全部訂單（`stream`）
+
+### 情境
+
+後台要把「已完成」的訂單匯出成 CSV，可能有好幾萬筆，一次全部塞進 `List` 太吃記憶體，想要一筆一筆處理。
+
+### 需求
+
+- 指定訂單狀態（`OrderStatus`）
+- 用 `streamBy` 開頭
+- 回傳型別是 `java.util.stream.Stream`
+
+### 寫在哪
+
+`OrderRepository`
+
+### 會用到的屬性
+
+- `Order.status`（`OrderStatus`）
+
+> 想一想：拿到 `Stream` 之後，用完要怎麼處理？呼叫端需要什麼註解？
