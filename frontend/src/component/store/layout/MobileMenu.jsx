@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { imgSrc } from "../../../js/format.js";
-import { useLanguage } from "../../../js/i18n.js";
 
 /**
  * 手機版分類選單：menu 是 Header 抓好的 /api/categories 整棵分類樹
@@ -10,8 +9,6 @@ import { useLanguage } from "../../../js/i18n.js";
  * 電腦版（761px 以上）隱藏，避免拉寬視窗時殘留在畫面上
  */
 function MobileMenu({ menu, closeMenu }) {
-    const { t } = useLanguage();
-
     // 目前選到哪個第 1 層分類的 code，null 代表還沒選，預設顯示第一個
     const [selectedCode, setSelectedCode] = useState(null);
     const selectedTop = menu.find((top) => top.code === selectedCode) ?? menu[0];
@@ -28,7 +25,7 @@ function MobileMenu({ menu, closeMenu }) {
                     onClick={closeMenu}
                     className="-mb-px shrink-0 border-b border-transparent py-3 text-[14px] tracking-[.08em] text-[#76716c]"
                 >
-                    {t('newArrivals')}
+                    新品
                 </Link>
 
                 {menu.map((top) => (
@@ -45,7 +42,7 @@ function MobileMenu({ menu, closeMenu }) {
                     onClick={closeMenu}
                     className="-mb-px shrink-0 border-b border-transparent py-3 text-[14px] tracking-[.08em] text-[#76716c]"
                 >
-                    {t('recommendations')}
+                    為你推薦
                 </Link>
             </div>
 

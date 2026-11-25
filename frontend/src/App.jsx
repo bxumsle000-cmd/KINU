@@ -23,7 +23,6 @@ import Recommendations from "./pages/store/Recommendations.jsx";
 import RecommendationSettings from "./pages/store/RecommendationSettings.jsx";
 import MemberLayout from "./pages/store/MemberLayout.jsx";
 import MemberProfile from "./pages/store/MemberProfile.jsx";
-import { LanguageProvider } from "./js/LanguageProvider.jsx";
 import { CountProvider } from "./js/CountProvider.jsx";
 import AdminLogin from "./pages/admin/AdminLogin.jsx";
 import ProductDepartmentHome from "./pages/admin/ProductDepartmentHome.jsx";
@@ -94,15 +93,13 @@ function AdminLayout(){
 
 function App(){
     return (
-        <LanguageProvider>
-            <BrowserRouter>
-                <Routes>
-                    {/* /admin 開頭的網址交給 AdminLayout，其他都交給前台 StoreLayout */}
-                    <Route path="/admin/*" element={<AdminLayout/>}/>
-                    <Route path="*" element={<StoreLayout/>}/>
-                </Routes>
-            </BrowserRouter>
-        </LanguageProvider>
+        <BrowserRouter>
+            <Routes>
+                {/* /admin 開頭的網址交給 AdminLayout，其他都交給前台 StoreLayout */}
+                <Route path="/admin/*" element={<AdminLayout/>}/>
+                <Route path="*" element={<StoreLayout/>}/>
+            </Routes>
+        </BrowserRouter>
     )
 }
 

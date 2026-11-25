@@ -1,15 +1,11 @@
 import { useState, useEffect, useContext } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import { getToken } from "../../../js/auth.js";
-import { useLanguage } from "../../../js/i18n.js";
 import { CountContext } from "../../../js/CountProvider.jsx";
-import LanguageMenu from "./LanguageMenu.jsx";
 import MemberMenu from "./MemberMenu.jsx";
 
 /** Header 右邊：搜尋、各功能 */
 function HeaderActions() {
-    const { t } = useLanguage();
-
     const [temp, setTemp] = useState(27);
 
     useEffect(() => {
@@ -68,7 +64,7 @@ function HeaderActions() {
             <form onSubmit={submitSearch} role="search">
                 <input
                     type="search"
-                    placeholder={t('searchPlaceholder')}
+                    placeholder="搜尋商品"
                     value={keyword}
                     onChange={(e) =>
                         setKeyword(e.target.value)
@@ -78,25 +74,25 @@ function HeaderActions() {
             </form>
 
             <div className="text-[10px] whitespace-nowrap text-[#36322e] max-[760px]:text-[9px]">
-                {t('taipei')} {temp}°
+                台北 {temp}°
             </div>
 
             <Link to="/wishlist" className={actionClass}>
-                {t('wishlist')}
+                收藏
                 <span className={countClass}>{wishCount}</span>
             </Link>
 
             <Link to="/cart" className={actionClass}>
-                {t('cart')}
+                購物車
                 <span className={countClass}>{cartCount}</span>
             </Link>
 
             <Link to="/coupons" className={actionClass}>
-                {t('coupons')}
+                折價券
             </Link>
 
             <Link to="/orders" className={actionClass}>
-                {t('orders')}
+                訂單
             </Link>
 
             {/* 僅會員登入後顯示；位置固定在訂單右側、登出左側。 */}
@@ -116,11 +112,9 @@ function HeaderActions() {
                 <MemberMenu className={actionClass} />
             ) : (
                 <Link to="/login" className={actionClass}>
-                    {t('login')}
+                    登入
                 </Link>
             )}
-
-            <LanguageMenu />
         </div>
     );
 }

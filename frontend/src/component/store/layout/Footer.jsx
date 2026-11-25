@@ -1,7 +1,5 @@
-import { useLanguage } from "../../../js/i18n.js";
 
 function Footer() {
-    const { t } = useLanguage();
     return (
         <footer className="bg-black font-kinu px-[6.2%] pt-[43px] pb-6 text-white">
             {/* 上半：Logo、標語、連結 */}
@@ -12,9 +10,9 @@ function Footer() {
                     <div className="mt-2.5 text-[9px] tracking-[.08em] text-[#a5a09a]">EVERYDAY, BEAUTIFULLY.</div>
                 </div>
                 <div className="flex gap-[38px] text-[9px] tracking-[.1em] max-[760px]:mt-[30px] max-[760px]:flex-wrap max-[760px]:gap-[18px]">
-                    <a href="/shipping-returns">{t('shippingReturns')}</a>
-                    <a href="/faq">{t('faq')}</a>
-                    <a href="/support">{t('contactUs')}</a>
+                    <a href="/shipping-returns">配送與退貨</a>
+                    <a href="/faq">常見問題</a>
+                    <a href="/support">聯絡我們</a>
                     <a href="#">Instagram ↗</a>
                 </div>
             </div>

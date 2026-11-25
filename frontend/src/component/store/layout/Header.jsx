@@ -5,17 +5,14 @@ import MegaMenu from "./MegaMenu.jsx";
 import MobileMenu from "./MobileMenu.jsx";
 import HeaderActions from "./HeaderActions.jsx";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../../js/i18n.js";
 
 function Header() {
     /** 導覽列的三個分類，對應資料庫第 1 層分類的 code */
     const TOP_CATEGORIES = [
-        { code: 'all_women', i18n: 'women' },
-        { code: 'all_men', i18n: 'men' },
-        { code: 'all_kids', i18n: 'kids' }
+        { code: 'all_women', label: '女裝' },
+        { code: 'all_men', label: '男裝' },
+        { code: 'all_kids', label: '兒童' }
     ];
-    const { t } = useLanguage();
-
     // 分類選單：menu 是 /api/categories 的整棵分類樹，只抓一次
     const [menu, setMenu] = useState([]);
     useEffect(() => {
@@ -63,7 +60,7 @@ function Header() {
     return (
         <>
             <div className="flex h-8 items-center justify-center bg-black font-kinu text-[10px] tracking-[.12em] text-white">
-                {t('topBanner')}
+                全館滿 NT$2,500，享免運服務
             </div>
 
             <div ref={headerAreaRef} className="relative font-kinu">
@@ -76,7 +73,7 @@ function Header() {
                             onClick={closeMenu}
                             className={navLinkClass}
                         >
-                            {t('newArrivals')}
+                            新品
                         </Link>
 
                         {TOP_CATEGORIES.map((top) => (
@@ -98,7 +95,7 @@ function Header() {
                                     )
                                 }
                             >
-                                {t(top.i18n)}
+                                {top.label}
                             </button>
                         ))}
 
@@ -107,7 +104,7 @@ function Header() {
                             onClick={closeMenu}
                             className={navLinkClass}
                         >
-                            {t('recommendations')}
+                            為你推薦
                         </Link>
                     </div>
 
@@ -115,8 +112,8 @@ function Header() {
                     <button
                         aria-label={
                             mobileMenuOpen
-                                ? t('closeMenu')
-                                : t('menu')
+                                ? '關閉選單'
+                                : '選單'
                         }
                         onClick={() =>
                             setMobileMenuOpen(!mobileMenuOpen)

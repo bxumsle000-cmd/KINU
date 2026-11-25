@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../../js/i18n.js";
 import { logoutMember } from "../../../js/firebase.js";
 
 const itemClass =
@@ -8,8 +7,6 @@ const itemClass =
 
 /** 會員中心選單：點「會員中心」打開，選了項目或點選單以外的地方就收起來 */
 function MemberMenu({ className }) {
-    const { t } = useLanguage();
-
     const [memberMenuOpen, setMemberMenuOpen] = useState(false);
     const memberMenuRef = useRef(null);
     useEffect(() => {
@@ -26,7 +23,7 @@ function MemberMenu({ className }) {
             <button aria-expanded={memberMenuOpen}
                     onClick={() => setMemberMenuOpen(!memberMenuOpen)}
                     className={className}>
-                {t('memberCenter')}
+                會員中心
             </button>
             {memberMenuOpen && (
                 <ul className="absolute right-0 top-full z-50 min-w-[110px] border border-[#dfd9d2] bg-[#F6F5F2] py-1.5">
@@ -42,7 +39,7 @@ function MemberMenu({ className }) {
                     </li>
                     <li>
                         <button onClick={logoutMember} className={itemClass}>
-                            {t('logout')}
+                            登出
                         </button>
                     </li>
                 </ul>
