@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { getAdminToken } from "../../../js/admin.js";
 import { money } from "../../../js/format.js";
 import { toast } from "../../../js/toast.js";
-import ProductStyleSelector from "./ProductStyleSelector.jsx";
 
 const EMPTY_FORM = {
     productNumber: "",
@@ -11,9 +10,7 @@ const EMPTY_FORM = {
     price: "",
     origPrice: "",
     categoryId: "",
-    styleIds: [],
     newArrival: false,
-    hot: false,
 };
 
 async function adminRequest(path, options = {}) {
@@ -52,7 +49,6 @@ function ProductCreateModal({
                                 onCreated,
                             }) {
     const [categories, setCategories] = useState([]);
-    const [styles, setStyles] = useState([]);
     const [form, setForm] = useState(EMPTY_FORM);
 
     const [loading, setLoading] = useState(true);
@@ -67,17 +63,13 @@ function ProductCreateModal({
             setError("");
 
             try {
-                const [categoryData, styleData] =
-                    await Promise.all([
-                        adminRequest(
-                            "/api/admin/product/categories"
-                        ),
-                        adminRequest("/api/styles"),
-                    ]);
+                const categoryData =
+                    await adminRequest(
+                        "/api/admin/product/categories"
+                    );
 
                 if (active) {
                     setCategories(categoryData || []);
-                    setStyles(styleData || []);
                 }
             } catch (e) {
                 if (active) {
@@ -204,9 +196,7 @@ function ProductCreateModal({
                             price,
                             origPrice,
                             categoryId,
-                            styleIds: form.styleIds,
                             newArrival: form.newArrival,
-                            hot: form.hot,
                         }),
                     }
                 );
@@ -345,18 +335,6 @@ function ProductCreateModal({
                                     </select>
                                 </label>
 
-                                <ProductStyleSelector
-                                    styles={styles}
-                                    selectedStyleIds={form.styleIds}
-                                    onChange={styleIds =>
-                                        setForm(current => ({
-                                            ...current,
-                                            styleIds,
-                                        }))
-                                    }
-                                    disabled={saving}
-                                />
-
                                 <label className="col-span-2 flex flex-col gap-1.5 max-[600px]:col-span-1">
                                     <span className="text-[11px] tracking-[.1em] text-muted">
                                         商品名稱 *
@@ -446,21 +424,6 @@ function ProductCreateModal({
                                         className="accent-black"
                                     />
                                     新品標籤
-                                </label>
-
-                                <label className="flex cursor-pointer items-center gap-2 text-[13px]">
-                                    <input
-                                        type="checkbox"
-                                        name="hot"
-                                        checked={
-                                            form.hot
-                                        }
-                                        onChange={
-                                            updateField
-                                        }
-                                        className="accent-black"
-                                    />
-                                    熱門標籤
                                 </label>
                             </div>
                         </div>

@@ -109,7 +109,7 @@ python tools/scraper/verify_products.py
 - **同一件商品可能有兩個色號同名**（COL10、COL12 都是 PINK）。爬蟲會把第二個標成 `粉紅色(12)`，因為資料庫 `UNIQUE(product_id, color, size)` 不允許重複。
 - **同一件商品會出現在多個分類**（例如男女適穿）。第一個分類收了，之後的分類會「略過」，統計裡的「略過」數就是這個。
 - **庫存是 Uniqlo 的真實數字**，有些上千件。要縮小是匯入 DB 時的事，不是爬蟲的事。
-- **`origPrice` 幾乎都是 null**，因為 Uniqlo 平常沒特價。`isHot` 一律 false，留給專題自己設。
+- **`origPrice` 幾乎都是 null**，因為 Uniqlo 平常沒特價。
 - 一個顏色一張圖，同顏色不同尺寸共用。圖片是 561px 寬，不需要再縮。
 
 ## 什麼時候要看 references/uniqlo-api.md

@@ -24,7 +24,7 @@ public class CurrentMember {
 
     /**
      * 有會員登入時回傳會員 id。
-     * 商品詳細頁允許訪客查看，因此未登入或員工登入時回傳 null，不拋出 401。
+     * 未登入或員工登入時回傳 null，不拋出 401。
      */
     public Long getCurrentIdOrNull() {
         Authentication auth =

@@ -120,7 +120,7 @@ flowchart TD
 | 路徑 | 規則 |
 |---|---|
 | `POST /api/auth/firebase`、`/api/admin/auth/login` | 不用登入 |
-| `GET /api/products/**`、`/api/categories/**`、`/api/styles/**`、`/api/recommendations/**` | 不用登入 |
+| `GET /api/products/**`、`/api/categories/**` | 不用登入 |
 | `POST /api/payments/ecpay/notify` | 不用登入（綠界通知） |
 | `/api/admin/部門/**` | 該部門或 ADMIN 的員工 token |
 | `/api/admin/**`（其他） | 任何員工 token（`ROLE_STAFF`） |

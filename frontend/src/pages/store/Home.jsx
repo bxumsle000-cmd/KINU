@@ -51,9 +51,9 @@ function Home() {
             {/* 輪播切換：‹ 01 / 03 › ●○○ */}
             <div className="absolute right-[5%] bottom-[26px] z-10 flex items-center gap-2 text-[10px] tracking-[.15em] text-white">
                 <button onClick={() => changeHeroVideo(-1)} aria-label="上一支影片" className="text-[22px]">‹</button>
-                <span>0{heroIndex + 1}　/　0{HERO_VIDEOS.length}</span>
+                <span>0{heroIndex + 1}{"\u3000/\u3000"}0{HERO_VIDEOS.length}</span>
                 <button onClick={() => changeHeroVideo(1)} aria-label="下一支影片" className="text-[22px]">›</button>
-                <span>　{HERO_VIDEOS.map((_, videoIndex) => videoIndex === heroIndex ? '●' : '○').join('　')}</span>
+                <span>{"\u3000"}{HERO_VIDEOS.map((_, videoIndex) => videoIndex === heroIndex ? '●' : '○').join('　')}</span>
             </div>
         </section>
 

@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from "react";
 import { getAdminToken } from "../../../js/admin.js";
 import { money } from "../../../js/format.js";
 import { toast } from "../../../js/toast.js";
-import ProductStyleSelector from "./ProductStyleSelector.jsx";
 
 const EMPTY_FORM = {
     name: "",
@@ -10,9 +9,7 @@ const EMPTY_FORM = {
     price: "",
     origPrice: "",
     categoryId: "",
-    styleIds: [],
     newArrival: false,
-    hot: false,
 };
 
 function emptyVariantRow() {
@@ -84,7 +81,6 @@ function ProductEditModal({
 
     const [product, setProduct] = useState(null);
     const [categories, setCategories] = useState([]);
-    const [styles, setStyles] = useState([]);
     const [form, setForm] = useState(EMPTY_FORM);
     const [stockValues, setStockValues] = useState({});
 
@@ -118,7 +114,7 @@ function ProductEditModal({
             setError("");
 
             try {
-                const [productData, categoryData, styleData] =
+                const [productData, categoryData] =
                     await Promise.all([
                         adminRequest(
                             `/api/admin/product/products/${productId}`
@@ -126,7 +122,6 @@ function ProductEditModal({
                         adminRequest(
                             "/api/admin/product/categories"
                         ),
-                        adminRequest("/api/styles"),
                     ]);
 
                 if (!active) {
@@ -135,7 +130,6 @@ function ProductEditModal({
 
                 applyProduct(productData);
                 setCategories(categoryData || []);
-                setStyles(styleData || []);
             } catch (e) {
                 if (active) {
                     setError(e.message);
@@ -168,11 +162,7 @@ function ProductEditModal({
             categoryId: String(
                 data.categoryId ?? ""
             ),
-            styleIds: (data.styles || []).map(
-                style => style.id
-            ),
             newArrival: Boolean(data.newArrival),
-            hot: Boolean(data.hot),
         });
 
         setStockValues(createStockValues(data));
@@ -268,9 +258,7 @@ function ProductEditModal({
                         price,
                         origPrice,
                         categoryId,
-                        styleIds: form.styleIds,
                         newArrival: form.newArrival,
-                        hot: form.hot,
                     }),
                 }
             );
@@ -662,18 +650,6 @@ function ProductEditModal({
                                 </h3>
 
                                 <div className="grid grid-cols-2 gap-4 max-[600px]:grid-cols-1">
-                                    <ProductStyleSelector
-                                        styles={styles}
-                                        selectedStyleIds={form.styleIds}
-                                        onChange={styleIds =>
-                                            setForm(current => ({
-                                                ...current,
-                                                styleIds,
-                                            }))
-                                        }
-                                        disabled={busy}
-                                    />
-
                                     <label className="flex flex-col gap-1.5">
                                         <span className="text-[11px] text-muted">
                                             商品名稱 *
@@ -783,17 +759,6 @@ function ProductEditModal({
                                             className="accent-black"
                                         />
                                         新品標籤
-                                    </label>
-
-                                    <label className="flex items-center gap-2 text-[13px]">
-                                        <input
-                                            type="checkbox"
-                                            name="hot"
-                                            checked={form.hot}
-                                            onChange={updateField}
-                                            className="accent-black"
-                                        />
-                                        熱門標籤
                                     </label>
                                 </div>
 

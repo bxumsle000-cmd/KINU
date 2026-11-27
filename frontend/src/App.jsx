@@ -19,8 +19,6 @@ import CompleteProfile from "./pages/store/CompleteProfile.jsx";
 import ProfileGuard from "./component/guard/ProfileGuard.jsx";
 import RequireLogin from "./component/guard/RequireLogin.jsx";
 import NewArrivals from "./pages/store/NewArrivals.jsx";
-import Recommendations from "./pages/store/Recommendations.jsx";
-import RecommendationSettings from "./pages/store/RecommendationSettings.jsx";
 import MemberLayout from "./pages/store/MemberLayout.jsx";
 import MemberProfile from "./pages/store/MemberProfile.jsx";
 import { CountProvider } from "./js/CountProvider.jsx";
@@ -58,12 +56,9 @@ function StoreLayout(){
                         {/* 配送與退貨、常見問題是純說明頁，訪客也能看。 */}
                         <Route path="/shipping-returns" element={<ShippingReturns/>}/>
                         <Route path="/faq" element={<Faq/>}/>
-                        {/* 訪客看熱門商品，登入會員則取得個人化推薦。 */}
-                        <Route path="/recommendations" element={<Recommendations/>}/>
                         {/* 會員中心：外框是 MemberLayout，裡面依網址換子頁面；必須登入才能使用。 */}
                         <Route path="/member" element={<RequireLogin><MemberLayout/></RequireLogin>}>
                             <Route index element={<MemberProfile/>}/>
-                            <Route path="recommendation-settings" element={<RecommendationSettings/>}/>
                         </Route>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/complete-profile" element={<CompleteProfile/>}/>

@@ -5,17 +5,15 @@
 ```
 MemberLayout
 └─ <Outlet/>
-    ├─ MemberProfile（/member）
-    └─ RecommendationSettings（/member/recommendation-settings）
+    └─ MemberProfile（/member）
 ```
 
 ## Component 作用
 
 | Component | 位置 | 作用 |
 |---|---|---|
-| MemberLayout | `pages/store/` | 會員中心外框：「會員中心」大標題、左邊選單（會員資料、推薦設定），右邊用 `<Outlet/>` 放目前網址的子頁面；子頁面在 `App.jsx` 的 `/member` 底下設定 |
+| MemberLayout | `pages/store/` | 會員中心外框：「會員中心」大標題、左邊選單（會員資料），右邊用 `<Outlet/>` 放目前網址的子頁面；子頁面在 `App.jsx` 的 `/member` 底下設定 |
 | MemberProfile | `pages/store/` | 會員資料子頁面，另見 `MemberProfile.md` |
-| RecommendationSettings | `pages/store/` | 推薦設定子頁面，另見 `RecommendationSettings.md` |
 
 > 這頁包在前台外框裡（Header、Footer、ProfileGuard），外框另見 `StoreLayout.md`。
 > 需要登入：`App.jsx` 在外面包了 `RequireLogin`。

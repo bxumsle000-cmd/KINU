@@ -18,27 +18,27 @@ const TREND_STYLES = {
 function ProductAnalyticsPanel() {
     const [days, setDays] = useState(30);
     const [refreshKey, setRefreshKey] = useState(0);
-    const [items, setItems] = useState(null);
-    const [error, setError] = useState("");
+    // 查詢結果連同它對應的查詢條件一起存；條件換了但結果還沒回來時，items 就是 null（顯示載入中）
+    const [result, setResult] = useState({ key: null, items: null, error: "" });
+    const requestKey = `${days}|${refreshKey}`;
+    const items = result.key === requestKey ? result.items : null;
+    const error = result.key === requestKey ? result.error : "";
 
     useEffect(() => {
+        const key = `${days}|${refreshKey}`;
         let ignore = false;
-
-        setItems(null);
-        setError("");
 
         adminApi(
             `/api/admin/product/analytics/trends?days=${days}&limit=20`
         )
             .then(data => {
                 if (!ignore) {
-                    setItems(data);
+                    setResult({ key, items: data, error: "" });
                 }
             })
             .catch(requestError => {
                 if (!ignore) {
-                    setItems([]);
-                    setError(requestError.message);
+                    setResult({ key, items: [], error: requestError.message });
                 }
             });
 

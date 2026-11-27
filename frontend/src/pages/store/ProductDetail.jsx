@@ -133,20 +133,6 @@ function ProductDetail() {
                         {product.name}
                     </h1>
 
-                    {/* 商品風格標籤 */}
-                    {product.styles?.length > 0 && (
-                        <div className="mb-5 flex flex-wrap gap-2">
-                            {product.styles.map(style => (
-                                <span
-                                    key={style.id}
-                                    className="border border-[#d6d0c7] bg-white px-3 py-1.5 text-[10px] tracking-[.1em] text-[#4a4643]"
-                                >
-                {style.name}
-            </span>
-                            ))}
-                        </div>
-                    )}
-
                     {/* 價格：特價時售價變紅，原價加刪除線 */}
                     <div
                         className={

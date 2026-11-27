@@ -8,6 +8,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.resource.NoResourceFoundException;
 
 import java.util.StringJoiner;
 
@@ -85,6 +86,25 @@ public class GlobalExceptionHandler {
         return ResponseEntity
                 .status(HttpStatus.BAD_REQUEST)
                 .body(new ErrorResponse(HttpStatus.BAD_REQUEST.value(), "請求內容格式錯誤，請確認欄位值是否正確"));
+    }
+
+    /**
+     * 【2-2. 網址不存在】負責處理「沒有任何 Controller、也沒有靜態檔」對應的網址。
+     * <p>
+     * 觸發時機：打了不存在的路徑，例如 /no-such-page、/api/not-exist、或舊網址 /recommendations，
+     * Spring 找不到對應的處理者時會丟出 NoResourceFoundException。
+     * <p>
+     * 處理方式：固定回 404。這是使用者打錯網址，不是伺服器壞掉，所以只記 warn，不印 stack trace。
+     * <p>
+     * 例：GET /no-such-page
+     *   → HTTP 404 { "code": 404, "message": "找不到這個網址" }
+     */
+    @ExceptionHandler(NoResourceFoundException.class)
+    public ResponseEntity<ErrorResponse> handleNoResource(NoResourceFoundException e) {
+        log.warn("找不到網址 {}", e.getResourcePath());
+        return ResponseEntity
+                .status(HttpStatus.NOT_FOUND)
+                .body(new ErrorResponse(HttpStatus.NOT_FOUND.value(), "找不到這個網址"));
     }
 
     /**

@@ -20,7 +20,6 @@ public record ProductJson(
         Integer price,
         Integer origPrice,
         boolean isNew,
-        boolean isHot,
         List<VariantJson> variants
 ) {
     public record VariantJson(

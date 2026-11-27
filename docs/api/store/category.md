@@ -276,12 +276,7 @@ GET /api/categories/all_men-tops/products?page=0&size=24&colors=黑色&colors=�
       "price": 590,
       "origPrice": 790,
       "newArrival": false,
-      "hot": false,
-      "imageUrl": "img/products/men-481569/col62.jpg",
-      "styles": [
-        { "id": 1, "code": "japanese", "name": "日系" },
-        { "id": 2, "code": "natural", "name": "自然風" }
-      ]
+      "imageUrl": "img/products/men-481569/col62.jpg"
     }
   ],
   "page": {
@@ -302,9 +297,7 @@ GET /api/categories/all_men-tops/products?page=0&size=24&colors=黑色&colors=�
 | `price` | number | 售價 |
 | `origPrice` | number \| null | 原價；**有值且大於 `price` 時顯示特價** |
 | `newArrival` | boolean | 是否顯示「新品」標籤 |
-| `hot` | boolean | 是否顯示「熱門」標籤 |
 | `imageUrl` | string \| null | 縮圖，沒有時是 `null` |
-| `styles` | array | 商品的風格標籤，每一筆是 `{ id, code, name }`，沒有標籤是 `[]` |
 
 `page` 分頁資訊：
 
@@ -354,7 +347,7 @@ GET /api/categories/all_men-tops/products?page=0&size=24&colors=黑色&colors=�
 ④ 回 200 + JSON（content + page）
 ```
 
-**資料庫影響：** 只有「讀」`categories`、`products`、`product_variants`、`product_styles`、`styles` 表，不會寫入任何資料。
+**資料庫影響：** 只有「讀」`categories`、`products`、`product_variants` 表，不會寫入任何資料。
 
 **補充：為什麼要一次撈出全部分類？**
 分類只有幾百筆，一次全部撈進記憶體再往下找，只需要查一次資料庫。如果每往下一層就查一次，4 層就要查好幾次。

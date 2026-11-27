@@ -37,7 +37,7 @@ function AdminHome() {
     // 沒登入就回登入頁
     useEffect(() => {
         if (!localStorage.getItem(ADMIN_TOKEN_KEY)) navigate('/admin/login');
-    }, []);
+    }, [navigate]);
 
     useEffect(() => {
         const params = new URLSearchParams({ page: page, size: 20 });

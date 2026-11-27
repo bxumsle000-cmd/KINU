@@ -21,7 +21,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -365,7 +364,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -775,7 +773,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -1121,7 +1118,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -1195,7 +1191,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -1413,7 +1408,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -1565,7 +1559,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -1973,7 +1966,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -2445,7 +2437,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -2727,7 +2718,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -3007,7 +2997,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -3199,7 +3188,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -3415,7 +3403,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -3697,7 +3684,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -3771,7 +3757,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -3869,7 +3854,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -4023,7 +4007,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -4113,7 +4096,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -4201,7 +4183,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "卡其色",
@@ -4481,7 +4462,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -4569,7 +4549,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -4641,7 +4620,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -4729,7 +4707,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -4801,7 +4778,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -5017,7 +4993,6 @@
     "price": 790,
     "origPrice": 1490,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -5267,7 +5242,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -5549,7 +5523,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -5669,7 +5642,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -6141,7 +6113,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -6237,7 +6208,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -6837,7 +6807,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -6925,7 +6894,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -7013,7 +6981,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -7293,7 +7260,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -7637,7 +7603,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -8045,7 +8010,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -8325,7 +8289,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -8669,7 +8632,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -8949,7 +8911,6 @@
     "price": 1290,
     "origPrice": 1990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -9357,7 +9318,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -9477,7 +9437,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -9821,7 +9780,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -10101,7 +10059,6 @@
     "price": 4990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -10189,7 +10146,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "卡其色",
@@ -10261,7 +10217,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -10349,7 +10304,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -10437,7 +10391,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "卡其色",
@@ -10509,7 +10462,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -10597,7 +10549,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -10789,7 +10740,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -10981,7 +10931,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -11117,7 +11066,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -11197,7 +11145,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -11389,7 +11336,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -11557,7 +11503,6 @@
     "price": 99,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -11645,7 +11590,6 @@
     "price": 99,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -11687,7 +11631,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -12289,7 +12232,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -12697,7 +12639,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -12819,7 +12760,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -13229,7 +13169,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -13767,7 +13706,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -13985,7 +13923,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -14459,7 +14396,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -14867,7 +14803,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -15211,7 +15146,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -15309,7 +15243,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -15975,7 +15908,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -16385,7 +16317,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -17115,7 +17046,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -17459,7 +17389,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -17805,7 +17734,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -18215,7 +18143,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -18625,7 +18552,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -18841,7 +18767,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -19147,7 +19072,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -19621,7 +19545,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -19775,7 +19698,6 @@
     "price": 290,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -20119,7 +20041,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -20465,7 +20386,6 @@
     "price": 149,
     "origPrice": 190,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -20875,7 +20795,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -21349,7 +21268,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -21631,7 +21549,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -22039,7 +21956,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -22343,7 +22259,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -22815,7 +22730,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -23415,7 +23329,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -23761,7 +23674,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -23849,7 +23761,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -24321,7 +24232,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -24409,7 +24319,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -24497,7 +24406,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -24585,7 +24493,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -24673,7 +24580,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -24761,7 +24667,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -24849,7 +24754,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -24937,7 +24841,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -25025,7 +24928,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -25113,7 +25015,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -25201,7 +25102,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -25609,7 +25509,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -25793,7 +25692,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -26009,7 +25907,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -26105,7 +26002,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -26385,7 +26281,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -26665,7 +26560,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -26945,7 +26839,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -27289,7 +27182,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -27635,7 +27527,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -27827,7 +27718,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -27925,7 +27815,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -28117,7 +28006,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -28303,7 +28191,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -28441,7 +28328,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -28579,7 +28465,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -28717,7 +28602,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -28911,7 +28795,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -29161,7 +29044,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -29523,7 +29405,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -29718,7 +29599,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -29856,7 +29736,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -29994,7 +29873,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -30188,7 +30066,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -30326,7 +30203,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -30408,7 +30284,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -30546,7 +30421,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -30740,7 +30614,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -30934,7 +30807,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -31016,7 +30888,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -31154,7 +31025,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -31236,7 +31106,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -31430,7 +31299,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -31568,7 +31436,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -31650,7 +31517,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -31733,7 +31599,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -31816,7 +31681,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -31898,7 +31762,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -32037,7 +31900,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -32119,7 +31981,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -32177,7 +32038,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -32235,7 +32095,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -32373,7 +32232,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -32431,7 +32289,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -32513,7 +32370,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -32571,7 +32427,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -32661,7 +32516,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -32751,7 +32605,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -32841,7 +32694,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -32979,7 +32831,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橘色",
@@ -33061,7 +32912,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -33119,7 +32969,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -33201,7 +33050,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -33259,7 +33107,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -33317,7 +33164,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -33399,7 +33245,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -33457,7 +33302,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -33539,7 +33383,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -33621,7 +33464,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -33679,7 +33521,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -33737,7 +33578,6 @@
     "price": 590,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -34209,7 +34049,6 @@
     "price": 390,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -34403,7 +34242,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -34573,7 +34411,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -34741,7 +34578,6 @@
     "price": 390,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -34877,7 +34713,6 @@
     "price": 390,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35015,7 +34850,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -35095,7 +34929,6 @@
     "price": 390,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -35233,7 +35066,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35427,7 +35259,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35509,7 +35340,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35591,7 +35421,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35673,7 +35502,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35755,7 +35583,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -35837,7 +35664,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -36031,7 +35857,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -36225,7 +36050,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -36419,7 +36243,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -36557,7 +36380,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -36639,7 +36461,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -36721,7 +36542,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -36803,7 +36623,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -36885,7 +36704,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -36967,7 +36785,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37049,7 +36866,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37131,7 +36947,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37213,7 +37028,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37295,7 +37109,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37377,7 +37190,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37459,7 +37271,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -37539,7 +37350,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -37843,7 +37653,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -38091,7 +37900,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -38283,7 +38091,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -38421,7 +38228,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -38613,7 +38419,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -38733,7 +38538,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -38831,7 +38635,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -39642,7 +39445,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -40116,7 +39918,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -40302,7 +40103,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -40720,7 +40520,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -40906,7 +40705,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -41156,7 +40954,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -41342,7 +41139,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -41622,7 +41418,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -41744,7 +41539,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -41818,7 +41612,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -41892,7 +41685,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -42060,7 +41852,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -42252,7 +42043,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -42612,7 +42402,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -42748,7 +42537,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -42964,7 +42752,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -43156,7 +42943,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -43260,7 +43046,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -43620,7 +43405,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -43756,7 +43540,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -43852,7 +43635,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -44158,7 +43940,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -44406,7 +44187,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -44654,7 +44434,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -44958,7 +44737,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -45094,7 +44872,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -45342,7 +45119,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -45478,7 +45254,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -45614,7 +45389,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -45750,7 +45524,6 @@
     "price": 790,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -45998,7 +45771,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -46358,7 +46130,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -46606,7 +46377,6 @@
     "price": 990,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -46854,7 +46624,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -46990,7 +46759,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -47430,7 +47198,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -47648,7 +47415,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -47928,7 +47694,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -48080,7 +47845,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -48443,7 +48207,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -48854,7 +48617,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -49104,7 +48866,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -49408,7 +49169,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -49771,7 +49531,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -49966,7 +49725,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -50105,7 +49863,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -50356,7 +50113,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -50438,7 +50194,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -50518,7 +50273,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -50825,7 +50579,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -50905,7 +50658,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -51057,7 +50809,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -51465,7 +51216,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -51777,7 +51527,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -52025,7 +51774,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -52217,7 +51965,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -52529,7 +52276,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -52649,7 +52395,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -52961,7 +52706,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -53209,7 +52953,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -53457,7 +53200,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -53703,7 +53445,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深橘色",
@@ -54205,7 +53946,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -54707,7 +54447,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -55021,7 +54760,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -55095,7 +54833,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -55217,7 +54954,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -55289,7 +55025,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -55553,7 +55288,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -55721,7 +55455,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -55841,7 +55574,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -55963,7 +55695,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -56035,7 +55766,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -56155,7 +55885,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -56371,7 +56100,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -56493,7 +56221,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -56567,7 +56294,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -56687,7 +56413,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -56809,7 +56534,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -56929,7 +56653,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -57049,7 +56772,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -57217,7 +56939,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -57289,7 +57010,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -57409,7 +57129,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -57529,7 +57248,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -57601,7 +57319,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -57769,7 +57486,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -57841,7 +57557,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -58009,7 +57724,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -58081,7 +57795,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -58201,7 +57914,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -58321,7 +58033,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -58441,7 +58152,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -58609,7 +58319,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -58681,7 +58390,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -58801,7 +58509,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -58873,7 +58580,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -59089,7 +58795,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -59209,7 +58914,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -59425,7 +59129,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -59545,7 +59248,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -59713,7 +59415,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -59833,7 +59534,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -60049,7 +59749,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -60169,7 +59868,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -60289,7 +59987,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -60409,7 +60106,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -60529,7 +60225,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -60649,7 +60344,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -60771,7 +60465,6 @@
     "price": 89,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -61349,7 +61042,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -61408,7 +61100,6 @@
     "price": 89,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -61986,7 +61677,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -62060,7 +61750,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -62166,7 +61855,6 @@
     "price": 100,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -62672,7 +62360,6 @@
     "price": 89,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -63178,7 +62865,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -63236,7 +62922,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -63324,7 +63009,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -63414,7 +63098,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -63504,7 +63187,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -63560,7 +63242,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -63648,7 +63329,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -63706,7 +63386,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -63780,7 +63459,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -63836,7 +63514,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -63894,7 +63571,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -63952,7 +63628,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -64024,7 +63699,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -64098,7 +63772,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橘色",
@@ -64172,7 +63845,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -64244,7 +63916,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -64300,7 +63971,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -64356,7 +64026,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -64414,7 +64083,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -64456,7 +64124,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -64514,7 +64181,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -64556,7 +64222,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -64654,7 +64319,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -64752,7 +64416,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -64842,7 +64505,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -64964,7 +64626,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -65054,7 +64715,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -65128,7 +64788,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -65200,7 +64859,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -65272,7 +64930,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -65362,7 +65019,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -65460,7 +65116,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -65582,7 +65237,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -65688,7 +65342,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -65762,7 +65415,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -65820,7 +65472,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -65878,7 +65529,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -65968,7 +65618,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -66026,7 +65675,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -66114,7 +65762,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -66188,7 +65835,6 @@
     "price": 99,
     "origPrice": 120,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -66244,7 +65890,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -66302,7 +65947,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -66360,7 +66004,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -66402,7 +66045,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -66522,7 +66164,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -66594,7 +66235,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -66668,7 +66308,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -66742,7 +66381,6 @@
     "price": 120,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -66844,7 +66482,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -67122,7 +66759,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -67272,7 +66908,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -67614,7 +67249,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -67828,7 +67462,6 @@
     "price": 890,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -68234,7 +67867,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -68576,7 +68208,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -68790,7 +68421,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -69068,7 +68698,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -69346,7 +68975,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -69560,7 +69188,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -69838,7 +69465,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -69924,7 +69550,6 @@
     "price": 290,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -70202,7 +69827,6 @@
     "price": 890,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -70352,7 +69976,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -70502,7 +70125,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -70588,7 +70210,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -70740,7 +70361,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -70988,7 +70608,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -71124,7 +70743,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -71484,7 +71102,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -71676,7 +71293,6 @@
     "price": 590,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -71814,7 +71430,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -72272,7 +71887,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -72522,7 +72136,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -72884,7 +72497,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -73022,7 +72634,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -73216,7 +72827,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -73352,7 +72962,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -73546,7 +73155,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -73740,7 +73348,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -73830,7 +73437,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -74080,7 +73686,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -74330,7 +73935,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -74412,7 +74016,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -74492,7 +74095,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -74614,7 +74216,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -74808,7 +74409,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -74888,7 +74488,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -75056,7 +74655,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -75176,7 +74774,6 @@
     "price": 990,
     "origPrice": 1990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -75368,7 +74965,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -75672,7 +75268,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -75888,7 +75483,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -76080,7 +75674,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -76384,7 +75977,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -76632,7 +76224,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -77048,7 +76639,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -77216,7 +76806,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -77576,7 +77165,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -77824,7 +77412,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -78072,7 +77659,6 @@
     "price": 1690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -78376,7 +77962,6 @@
     "price": 2990,
     "origPrice": 3490,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -78568,7 +78153,6 @@
     "price": 1290,
     "origPrice": 1990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -78872,7 +78456,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -79120,7 +78703,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -79200,7 +78782,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -79448,7 +79029,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -79808,7 +79388,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -80280,7 +79859,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -80496,7 +80074,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -80802,7 +80379,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -81050,7 +80626,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -81242,7 +80817,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -81378,7 +80952,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -81498,7 +81071,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -81586,7 +81158,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -81780,7 +81351,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -81870,7 +81440,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -81928,7 +81497,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -82120,7 +81688,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -82208,7 +81775,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -82280,7 +81846,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -82472,7 +82037,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -82592,7 +82156,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -82664,7 +82227,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -82800,7 +82362,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -82880,7 +82441,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -83242,7 +82802,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -83828,7 +83387,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -84356,7 +83914,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -84622,7 +84179,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -85040,7 +84596,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -85138,7 +84693,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -85276,7 +84830,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -85750,7 +85303,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -85944,7 +85496,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -86418,7 +85969,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -86780,7 +86330,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -87046,7 +86595,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -87633,7 +87181,6 @@
     "price": 290,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -88052,7 +87599,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -88414,7 +87960,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -88776,7 +88321,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -88947,7 +88491,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -89141,7 +88684,6 @@
     "price": 390,
     "origPrice": 490,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -89503,7 +89045,6 @@
     "price": 290,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -89641,7 +89182,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -89779,7 +89319,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -89861,7 +89400,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -90223,7 +89761,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -90362,7 +89899,6 @@
     "price": 190,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "奶油色",
@@ -90610,7 +90146,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -90802,7 +90337,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -90994,7 +90528,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -91130,7 +90663,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -91266,7 +90798,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -91402,7 +90933,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -91538,7 +91068,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -91842,7 +91371,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -91922,7 +91450,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -92002,7 +91529,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -92082,7 +91608,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -92386,7 +91911,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -92690,7 +92214,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -92938,7 +92461,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -93186,7 +92708,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -93338,7 +92859,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -93474,7 +92994,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -93564,7 +93083,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -93926,7 +93444,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -94064,7 +93581,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -94258,7 +93774,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -94564,7 +94079,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -94702,7 +94216,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -94896,7 +94409,6 @@
     "price": 790,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -95090,7 +94602,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -95228,7 +94739,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -95366,7 +94876,6 @@
     "price": 990,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -95616,7 +95125,6 @@
     "price": 590,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -95754,7 +95262,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -95948,7 +95455,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -96198,7 +95704,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -96448,7 +95953,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -96584,7 +96088,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -96706,7 +96209,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -96788,7 +96290,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -96926,7 +96427,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -97008,7 +96508,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -97146,7 +96645,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -97228,7 +96726,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -97366,7 +96863,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -97504,7 +97000,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -97642,7 +97137,6 @@
     "price": 790,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -98004,7 +97498,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -98198,7 +97691,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -98280,7 +97772,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -98416,7 +97907,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -98490,7 +97980,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -98628,7 +98117,6 @@
     "price": 590,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -98710,7 +98198,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -98848,7 +98335,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -98930,7 +98416,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -99012,7 +98497,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -99150,7 +98634,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -99232,7 +98715,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -99314,7 +98796,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -99564,7 +99045,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -99702,7 +99182,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -100064,7 +99543,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -100482,7 +99960,6 @@
     "price": 590,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -100730,7 +100207,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -100980,7 +100456,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -101102,7 +100577,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -101406,7 +100880,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -101598,7 +101071,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -101736,7 +101208,6 @@
     "price": 3990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -102003,7 +101474,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -102307,7 +101777,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -102445,7 +101914,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -102581,7 +102049,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -102717,7 +102184,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -102855,7 +102321,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -102977,7 +102442,6 @@
     "price": 3490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -103291,7 +102755,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -103509,7 +102972,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -104375,7 +103837,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -104849,7 +104310,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -105155,7 +104615,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -105347,7 +104806,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -105877,7 +105335,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -106159,7 +105616,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -106297,7 +105753,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -106443,7 +105898,6 @@
     "price": 1990,
     "origPrice": 2990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -107309,7 +106763,6 @@
     "price": 2990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -107525,7 +106978,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -107679,7 +107131,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -107945,7 +107396,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -108419,7 +107869,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -108781,7 +108230,6 @@
     "price": 2490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -108951,7 +108399,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -109073,7 +108520,6 @@
     "price": 590,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -109193,7 +108639,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -109363,7 +108808,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -109581,7 +109025,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -109751,7 +109194,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -110057,7 +109499,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -110227,7 +109668,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -110477,7 +109917,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -110725,7 +110164,6 @@
     "price": 790,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -111063,7 +110501,6 @@
     "price": 990,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -111143,7 +110580,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -111313,7 +110749,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -111529,7 +110964,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -111649,7 +111083,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -111841,7 +111274,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -112281,7 +111713,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橘色",
@@ -112593,7 +112024,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -113033,7 +112463,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -113281,7 +112710,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -113473,7 +112901,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -113833,7 +113260,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -114049,7 +113475,6 @@
     "price": 790,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -114187,7 +113612,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -114435,7 +113859,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -114515,7 +113938,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -114651,7 +114073,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -114787,7 +114208,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -114979,7 +114399,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -115227,7 +114646,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -115363,7 +114781,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -115667,7 +115084,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -115835,7 +115251,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -116083,7 +115498,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -116333,7 +115747,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -116581,7 +115994,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -116941,7 +116353,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -117245,7 +116656,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -117429,7 +116839,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -117565,7 +116974,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -117717,7 +117125,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -117853,7 +117260,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -117989,7 +117395,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -118125,7 +117530,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -118213,7 +117617,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -118405,7 +117808,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -118637,7 +118039,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -118765,7 +118166,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -118997,7 +118397,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -119229,7 +118628,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -119461,7 +118859,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -119695,7 +119092,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -119943,7 +119339,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -120159,7 +119554,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -120463,7 +119857,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -120599,7 +119992,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -120791,7 +120183,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -120983,7 +120374,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -121119,7 +120509,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -121239,7 +120628,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -121335,7 +120723,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -121583,7 +120970,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -121735,7 +121121,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -121983,7 +121368,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -122063,7 +121447,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -122151,7 +121534,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -122345,7 +121727,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -122537,7 +121918,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -122673,7 +122053,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -122753,7 +122132,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -122841,7 +122219,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -122897,7 +122274,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -123033,7 +122409,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -123115,7 +122490,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -123197,7 +122571,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -123335,7 +122708,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -123641,7 +123013,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -123793,7 +123164,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -123971,7 +123341,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -124219,7 +123588,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -124355,7 +123723,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -124411,7 +123778,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -124659,7 +124025,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -124905,7 +124270,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -125207,7 +124571,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -125341,7 +124704,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -125419,7 +124781,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -125553,7 +124914,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -125633,7 +124993,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -125849,7 +125208,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -125969,7 +125327,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -126185,7 +125542,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -126353,7 +125709,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -126449,7 +125804,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -126569,7 +125923,6 @@
     "price": 290,
     "origPrice": 1290,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -126705,7 +126058,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -126825,7 +126177,6 @@
     "price": 790,
     "origPrice": 990,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -126993,7 +126344,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -127065,7 +126415,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -127137,7 +126486,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -127257,7 +126605,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -127427,7 +126774,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -127501,7 +126847,6 @@
     "price": 1490,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -127623,7 +126968,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -127793,7 +127137,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -128059,7 +127402,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -128227,7 +127569,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -128299,7 +127640,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -128421,7 +127761,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -128685,7 +128024,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -128999,7 +128337,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -129138,7 +128475,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -129221,7 +128557,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -129527,7 +128862,6 @@
     "price": 490,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -129833,7 +129167,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -130028,7 +129361,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -130278,7 +129610,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -130360,7 +129691,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -130440,7 +129770,6 @@
     "price": 390,
     "origPrice": 490,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -130626,7 +129955,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -130764,7 +130092,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -130846,7 +130173,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -130929,7 +130255,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -131123,7 +130448,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -131405,7 +130729,6 @@
     "price": 390,
     "origPrice": 790,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -131711,7 +131034,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -131993,7 +131315,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -132243,7 +131564,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -132491,7 +131811,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -132915,7 +132234,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -133107,7 +132425,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -133259,7 +132576,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -133379,7 +132695,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -133469,7 +132784,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -133773,7 +133087,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -133895,7 +133208,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -134015,7 +133327,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -134135,7 +133446,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -134257,7 +133567,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -134377,7 +133686,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -134451,7 +133759,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -134525,7 +133832,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -134693,7 +133999,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -134813,7 +134118,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -134935,7 +134239,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -135057,7 +134360,6 @@
     "price": 99,
     "origPrice": 190,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -135227,7 +134529,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黃色",
@@ -135347,7 +134648,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -135467,7 +134767,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -135589,7 +134888,6 @@
     "price": 99,
     "origPrice": 190,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -135757,7 +135055,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -135879,7 +135176,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "咖啡色",
@@ -136185,7 +135481,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -136355,7 +135650,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -136477,7 +135771,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -136599,7 +135892,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -136721,7 +136013,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -136843,7 +136134,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -137013,7 +136303,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -137135,7 +136424,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -137257,7 +136545,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -137379,7 +136666,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -137501,7 +136787,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -137621,7 +136906,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -137837,7 +137121,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -138085,7 +137368,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -138207,7 +137489,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -138327,7 +137608,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -138449,7 +137729,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -138507,7 +137786,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -138555,7 +137833,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -138611,7 +137888,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "卡其色",
@@ -138661,7 +137937,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -138735,7 +138010,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -138783,7 +138057,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -138833,7 +138106,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -138875,7 +138147,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -138917,7 +138188,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -138973,7 +138243,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -139015,7 +138284,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -139073,7 +138341,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -139121,7 +138388,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -139161,7 +138427,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -139203,7 +138468,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -139253,7 +138517,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -139303,7 +138566,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -139343,7 +138605,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -139385,7 +138646,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -139425,7 +138685,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -139457,7 +138716,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -139491,7 +138749,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -139539,7 +138796,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -139595,7 +138851,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -139643,7 +138898,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -139683,7 +138937,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -139715,7 +138968,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -139757,7 +139009,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -139805,7 +139056,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -139847,7 +139097,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -139889,7 +139138,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米色",
@@ -139947,7 +139195,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -139995,7 +139242,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140035,7 +139281,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -140077,7 +139322,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140127,7 +139371,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -140177,7 +139420,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -140227,7 +139469,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -140283,7 +139524,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140331,7 +139571,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -140371,7 +139610,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140411,7 +139649,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -140453,7 +139690,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -140493,7 +139729,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -140533,7 +139768,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -140573,7 +139807,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140613,7 +139846,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -140653,7 +139885,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -140691,7 +139922,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -140937,7 +140167,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -141119,7 +140348,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -141365,7 +140593,6 @@
     "price": 890,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -141499,7 +140726,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -141745,7 +140971,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -141879,7 +141104,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -141967,7 +141191,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -142055,7 +141278,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -142143,7 +141365,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -142231,7 +141452,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -142319,7 +141539,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -142407,7 +141626,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -142495,7 +141713,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -142799,7 +142016,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -142879,7 +142095,6 @@
     "price": 790,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -142959,7 +142174,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -143177,7 +142391,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "原色",
@@ -143395,7 +142608,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -143755,7 +142967,6 @@
     "price": 990,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -143813,7 +143024,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -143981,7 +143191,6 @@
     "price": 290,
     "origPrice": 590,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -144197,7 +143406,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -144365,7 +143573,6 @@
     "price": 290,
     "origPrice": 590,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -144485,7 +143692,6 @@
     "price": 290,
     "origPrice": 590,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -144607,7 +143813,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -144775,7 +143980,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -144991,7 +144195,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -145113,7 +144316,6 @@
     "price": 1290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -145281,7 +144483,6 @@
     "price": 1990,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -145497,7 +144698,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -145683,7 +144883,6 @@
     "price": 890,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -145853,7 +145052,6 @@
     "price": 590,
     "origPrice": 890,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -146103,7 +145301,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -146417,7 +145614,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -146539,7 +145735,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -146661,7 +145856,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -146831,7 +146025,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -146953,7 +146146,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -147075,7 +146267,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -147213,7 +146404,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -147479,7 +146669,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -147601,7 +146790,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -147675,7 +146863,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -147749,7 +146936,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -147823,7 +147009,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -147897,7 +147082,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -147971,7 +147155,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橘色",
@@ -148045,7 +147228,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -148119,7 +147301,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -148193,7 +147374,6 @@
     "price": 290,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -148315,7 +147495,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -148435,7 +147614,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -148507,7 +147685,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -148579,7 +147756,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -148651,7 +147827,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -148723,7 +147898,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -148795,7 +147969,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -148867,7 +148040,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -148939,7 +148111,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -149011,7 +148182,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -149083,7 +148253,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深綠色",
@@ -149155,7 +148324,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -149227,7 +148395,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -149395,7 +148562,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -149611,7 +148777,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -149779,7 +148944,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -149851,7 +149015,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -150067,7 +149230,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -150139,7 +149301,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -150259,7 +149420,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -150331,7 +149491,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -150403,7 +149562,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -150595,7 +149753,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -150667,7 +149824,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -150859,7 +150015,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -150947,7 +150102,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深咖啡色",
@@ -151037,7 +150191,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -151351,7 +150504,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -151545,7 +150697,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -151619,7 +150770,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -151789,7 +150939,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -151911,7 +151060,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -151985,7 +151133,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -152059,7 +151206,6 @@
     "price": 390,
     "origPrice": 490,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -152181,7 +151327,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺紫色",
@@ -152351,7 +151496,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",
@@ -152473,7 +151617,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -152595,7 +151738,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -152669,7 +151811,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -152791,7 +151932,6 @@
     "price": 390,
     "origPrice": 590,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -153007,7 +152147,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -153271,7 +152410,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -153343,7 +152481,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -153433,7 +152570,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -153505,7 +152641,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -153593,7 +152728,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "橄欖綠",
@@ -153759,7 +152893,6 @@
     "price": 590,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -153877,7 +153010,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -154011,7 +153143,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -154081,7 +153212,6 @@
     "price": 890,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -154249,7 +153379,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -154385,7 +153514,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -154465,7 +153593,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -154601,7 +153728,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -154681,7 +153807,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -154761,7 +153886,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -154897,7 +154021,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -154977,7 +154100,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -155057,7 +154179,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -155137,7 +154258,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -155329,7 +154449,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -155409,7 +154528,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺紫色",
@@ -155489,7 +154607,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺綠色",
@@ -155569,7 +154686,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -155649,7 +154765,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -155729,7 +154844,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -155807,7 +154921,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -156021,7 +155134,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -156187,7 +155299,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -156313,7 +155424,6 @@
     "price": 190,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -156383,7 +155493,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -156421,7 +155530,6 @@
     "price": 290,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -156539,7 +155647,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "綠色",
@@ -156593,7 +155700,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -156631,7 +155737,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -156669,7 +155774,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "灰色",
@@ -156707,7 +155811,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藏青色",
@@ -156745,7 +155848,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -156783,7 +155885,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "深灰色",
@@ -156821,7 +155922,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺灰色",
@@ -156859,7 +155959,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "白色",
@@ -156897,7 +155996,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -156935,7 +156033,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -156973,7 +156070,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -157011,7 +156107,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -157049,7 +156144,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紫色",
@@ -157087,7 +156181,6 @@
     "price": 249,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -157125,7 +156218,6 @@
     "price": 490,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺藍色",
@@ -157245,7 +156337,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "淺紫色",
@@ -157365,7 +156456,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "藍色",
@@ -157453,7 +156543,6 @@
     "price": 690,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -157539,7 +156628,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "酒紅色",
@@ -157585,7 +156673,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "黑色",
@@ -157631,7 +156718,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "米白色",
@@ -157701,7 +156787,6 @@
     "price": 390,
     "origPrice": null,
     "isNew": true,
-    "isHot": false,
     "variants": [
       {
         "color": "粉紅色",
@@ -157771,7 +156856,6 @@
     "price": 190,
     "origPrice": 390,
     "isNew": false,
-    "isHot": false,
     "variants": [
       {
         "color": "紅色",

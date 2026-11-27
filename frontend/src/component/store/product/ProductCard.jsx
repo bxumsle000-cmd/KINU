@@ -35,12 +35,6 @@ function ProductCard({ product, liked, toggleLike }) {
                                 NEW
                             </span>
                         )}
-
-                        {product.hot && (
-                            <span className="bg-black px-[7px] py-1 text-[8px] tracking-[.15em] text-white">
-                                HOT
-                            </span>
-                        )}
                     </div>
                 </div>
 
@@ -48,22 +42,6 @@ function ProductCard({ product, liked, toggleLike }) {
                 <div className="mt-3 mb-[5px] text-[14px] leading-[1.6] tracking-[.04em]">
                     {product.name}
                 </div>
-
-                {/* 最多顯示三個風格標籤 */}
-                {product.styles?.length > 0 && (
-                    <div className="mb-2 flex flex-wrap gap-1.5">
-                        {product.styles
-                            .slice(0, 3)
-                            .map(style => (
-                                <span
-                                    key={style.id}
-                                    className="border border-line bg-white px-2 py-1 text-[9px] tracking-[.08em] text-muted"
-                                >
-                                    {style.name}
-                                </span>
-                            ))}
-                    </div>
-                )}
 
                 {/* 價格：特價時售價變紅，原價加刪除線 */}
                 <div

@@ -39,15 +39,14 @@
 外鍵只能指向「已經存在」的表，所以要照這個順序建：
 
 1. categories → products → product_variants
-2. styles → product_styles → style_aliases → style_relations
-3. members → member_profiles → cart_items → wishlist_items → member_product_views
-4. staff
-5. inventory_transactions → inventory_transaction_items
-6. coupons → member_coupons → coupon_schedules → coupon_schedule_members
-7. orders → order_items
-8. **回頭補上 member_coupons 指向 orders 的外鍵**（member_coupons 建立時 orders 還不存在）
-9. payments
-10. support_tickets
+2. members → member_profiles → cart_items → wishlist_items
+3. staff
+4. inventory_transactions → inventory_transaction_items
+5. coupons → member_coupons → coupon_schedules → coupon_schedule_members
+6. orders → order_items
+7. **回頭補上 member_coupons 指向 orders 的外鍵**（member_coupons 建立時 orders 還不存在）
+8. payments
+9. support_tickets
 
 ---
 
@@ -83,7 +82,6 @@
 | price | 整數 | 必填 | | 售價 |
 | orig_price | 整數 | 可空 | | 原價；有值且大於 price 就顯示特價 |
 | is_new | 是/否 | 必填 | 預設值 0 | 新品標籤 |
-| is_hot | 是/否 | 必填 | 預設值 0 | 人工設定的熱門 |
 | status | 文字(20) | 必填 | 預設值 ON_SALE | ON_SALE（上架中）/ OFF_SHELF（已下架） |
 | image_url | 文字(500) | 可空 | | 商品主圖，列表、追蹤清單、購物車用 |
 | scheduled_off_at | 日期時間（含小數秒） | 可空 | | 自動下架時間；空 = 不自動下架 |
@@ -112,67 +110,7 @@
 
 ---
 
-# 二、商品風格
-
-## styles（風格）
-
-| 欄位 | 型態 | 必填 | 特性 | 說明 |
-|---|---|---|---|---|
-| id | 大整數 | 必填 | 主鍵、自動編號 | |
-| code | 文字(50) | 必填 | 唯一 | 固定英文代碼，例如 japanese；程式和 SQL 用它找風格 |
-| name | 文字(50) | 必填 | 唯一 | 前台顯示名稱，例如 日系；可改名 |
-
----
-
-## product_styles（商品 ↔ 風格，多對多）
-
-| 欄位 | 型態 | 必填 | 特性 | 說明 |
-|---|---|---|---|---|
-| product_id | 大整數 | 必填 | 外鍵 → products（刪除時一起刪） | |
-| style_id | 大整數 | 必填 | 外鍵 → styles（刪除時擋下） | |
-
-表層規則：
-- **主鍵 = product_id + style_id 兩個欄位合起來**（沒有獨立的 id 欄位）：同一件商品不能重複貼同一個風格
-
-查詢加速：
-- style_id + product_id：從風格反查商品（主鍵是 product_id 在前，反過來查需要另一個索引）
-
----
-
-## style_aliases（風格同義詞）
-
-| 欄位 | 型態 | 必填 | 特性 | 說明 |
-|---|---|---|---|---|
-| style_id | 大整數 | 必填 | 外鍵 → styles（刪除時一起刪） | 對應的正式風格 |
-| alias | 文字(50) | 必填 | 限制值：去掉前後空白後不能是空字串 | 搜尋用的同義詞，例如 日式 → 日系 |
-
-表層規則：
-- **主鍵 = style_id + alias 兩個欄位合起來**：同一個風格不能有重複的別名，但同一個別名可以對應到不同風格
-
-查詢加速：
-- alias + style_id：用別名找風格
-
----
-
-## style_relations（相關風格，單向）
-
-| 欄位 | 型態 | 必填 | 特性 | 說明 |
-|---|---|---|---|---|
-| source_style_id | 大整數 | 必填 | 外鍵 → styles（刪除時擋下） | 搜尋到的風格 |
-| target_style_id | 大整數 | 必填 | 外鍵 → styles（刪除時擋下） | 要一起補充的相關風格 |
-| weight | 整數 | 必填 | 限制值：1 到 100 | 相關程度；目前程式還沒用到 |
-
-表層規則：
-- **主鍵 = source_style_id + target_style_id 兩個欄位合起來**
-- **限制值：source 和 target 不能相同**（比較兩個欄位，只能寫在表層）
-- 單向：A → B 和 B → A 要各存一筆
-
-查詢加速：
-- target_style_id：外鍵檢查和反查用
-
----
-
-# 三、會員相關
+# 二、會員相關
 
 ## members（會員帳號）
 
@@ -234,29 +172,7 @@
 
 ---
 
-## member_product_views（會員瀏覽紀錄）
-
-一個會員看同一件商品只有一筆，用 view_count 累加次數（30 分鐘內重複看不加）。
-
-| 欄位 | 型態 | 必填 | 特性 | 說明 |
-|---|---|---|---|---|
-| id | 大整數 | 必填 | 主鍵、自動編號 | |
-| member_id | 大整數 | 必填 | 外鍵 → members（刪除時一起刪） | |
-| product_id | 大整數 | 必填 | 外鍵 → products（刪除時一起刪） | |
-| view_count | 整數 | 必填 | 預設值 1 | 累積瀏覽次數 |
-| first_viewed_at | 日期時間 | 必填 | 預設值 = 新增當下 | 第一次看的時間 |
-| last_viewed_at | 日期時間 | 必填 | 預設值 = 新增當下 | 最後一次看的時間 |
-
-表層規則：
-- **member_id + product_id 組合唯一**
-
-查詢加速：
-- member_id + last_viewed_at（新的在前）：查會員最近看過什麼、算風格偏好
-- product_id + view_count（多的在前）：算商品瀏覽熱度
-
----
-
-# 四、後台員工
+# 三、後台員工
 
 ## staff（員工帳號）
 
@@ -275,7 +191,7 @@
 
 ---
 
-# 五、庫存異動
+# 四、庫存異動
 
 ## inventory_transactions（庫存異動單頭）
 
@@ -321,7 +237,7 @@
 
 ---
 
-# 六、折價券
+# 五、折價券
 
 ## coupons（折價券範本）
 
@@ -399,7 +315,7 @@ target_all = 1 的預約，這裡沒有資料。
 
 ---
 
-# 七、訂單
+# 六、訂單
 
 ## orders（訂單主檔）
 
@@ -483,7 +399,7 @@ target_all = 1 的預約，這裡沒有資料。
 
 ---
 
-# 八、客服
+# 七、客服
 
 ## support_tickets（客服單）
 

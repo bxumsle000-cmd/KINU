@@ -1,6 +1,5 @@
 package com.EEIT25.unicloth.dto.store.product;
 
-import com.EEIT25.unicloth.dto.store.style.StyleResponse;
 import com.EEIT25.unicloth.entity.Product;
 import com.EEIT25.unicloth.entity.ProductVariant;
 
@@ -17,7 +16,6 @@ import java.util.Map;
  * @param description  商品描述
  * @param price        售價
  * @param origPrice    原價
- * @param styles       商品風格標籤
  * @param colorOptions 顏色與尺寸選項
  */
 public record ProductDetailResponse(
@@ -26,7 +24,6 @@ public record ProductDetailResponse(
         String description,
         Integer price,
         Integer origPrice,
-        List<StyleResponse> styles,
         List<ColorOption> colorOptions
 ) {
     /**
@@ -53,19 +50,12 @@ public record ProductDetailResponse(
             );
         }
 
-        // 將風格 Entity 轉成回傳格式
-        List<StyleResponse> styles = product.getStyles()
-                .stream()
-                .map(StyleResponse::from)
-                .toList();
-
         return new ProductDetailResponse(
                 product.getSlug(),
                 product.getName(),
                 product.getDescription(),
                 product.getPrice(),
                 product.getOrigPrice(),
-                styles,
                 colorOptions);
     }
 

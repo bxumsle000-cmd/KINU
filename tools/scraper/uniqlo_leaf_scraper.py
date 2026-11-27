@@ -320,7 +320,6 @@ def build_product(item: dict, detail: dict, category_path: list[str], category_c
         "price": int(price),
         "origPrice": int(orig_price) if orig_price else None,
         "isNew": summary.get("isNew") == "Y",
-        "isHot": False,
         "variants": variants,
     }
 

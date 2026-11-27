@@ -258,7 +258,7 @@ function OrderDetailModal({ orderId, onClose, onOrderUpdated }) {
                             <div className="grid grid-cols-2 gap-x-6 gap-y-4 max-[600px]:grid-cols-1">
                                 <InfoItem label="會員 Email">{order.memberEmail}</InfoItem>
                                 <InfoItem label="收件人">
-                                    {order.receiverName}　{order.receiverPhone}
+                                    {order.receiverName}{"\u3000"}{order.receiverPhone}
                                 </InfoItem>
                                 <InfoItem label="收件人 Email">{order.receiverEmail}</InfoItem>
                                 <InfoItem label="配送方式">
@@ -421,7 +421,7 @@ function OrderDetailModal({ orderId, onClose, onOrderUpdated }) {
                                         <div className="min-w-0 flex-1">
                                             <div className="text-[13px] leading-[1.6]">{item.productName}</div>
                                             <div className="mt-1 text-[11px] text-muted">
-                                                {item.color}／{item.size}　× {item.qty}
+                                                {item.color}／{item.size}{"\u3000"}× {item.qty}
                                             </div>
                                             <div className="mt-2 text-[11px] text-muted">
                                                 單價 {money(item.unitPrice)}

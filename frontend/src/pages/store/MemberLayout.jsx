@@ -3,7 +3,6 @@ import { logoutMember } from "../../js/firebase.js";
 
 const MENU_ITEMS = [
     { to: "/member", label: "會員資料", end: true },
-    { to: "/member/recommendation-settings", label: "推薦設定", end: false },
 ];
 
 const menuClass =

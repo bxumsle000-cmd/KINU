@@ -7,38 +7,6 @@
 -- product_variants
 
 
--- ============================== 商品風格 ==============================
-
-CREATE TABLE styles (
-    id   BIGINT IDENTITY(1,1) NOT NULL,
-    code NVARCHAR(50) NOT NULL,
-    name NVARCHAR(50) NOT NULL,
-    CONSTRAINT pk_styles PRIMARY KEY (id),
-    CONSTRAINT uk_styles_code UNIQUE (code),
-    CONSTRAINT uk_styles_name UNIQUE (name)
-);
-
--- 一件商品可有多個風格，同一風格不可重複標記
-CREATE TABLE product_styles (
-    product_id BIGINT NOT NULL,
-    style_id   BIGINT NOT NULL,
-    CONSTRAINT pk_product_styles PRIMARY KEY (product_id, style_id),
-    CONSTRAINT fk_product_styles_product FOREIGN KEY (product_id) REFERENCES products (id) ON DELETE CASCADE,
-    CONSTRAINT fk_product_styles_style FOREIGN KEY (style_id) REFERENCES styles (id)
-);
-
--- 別名僅存同義詞；一個搜尋詞可對應多種風格
-CREATE TABLE style_aliases (
-    style_id BIGINT       NOT NULL,
-    alias    NVARCHAR(50) NOT NULL,
-    CONSTRAINT pk_style_aliases PRIMARY KEY (style_id, alias),
-    CONSTRAINT fk_style_aliases_style FOREIGN KEY (style_id) REFERENCES styles (id) ON DELETE CASCADE,
-    CONSTRAINT ck_style_aliases_not_blank CHECK (LEN(LTRIM(RTRIM(alias))) > 0)
-);
-
--- style_relations
-
-
 -- ============================== 會員相關 ==============================
 
 -- members
@@ -68,20 +36,6 @@ CREATE TABLE wishlist_items (
     CONSTRAINT uk_wish_member_product UNIQUE (member_id, product_id),
     CONSTRAINT fk_wish_member  FOREIGN KEY (member_id)  REFERENCES members (id)  ON DELETE CASCADE,
     CONSTRAINT fk_wish_product FOREIGN KEY (product_id) REFERENCES products (id) ON DELETE CASCADE
-);
-
--- 會員瀏覽各商品的累積次數
-CREATE TABLE member_product_views (
-    id              BIGINT IDENTITY(1,1) NOT NULL,
-    member_id       BIGINT       NOT NULL,
-    product_id      BIGINT       NOT NULL,
-    view_count      INT          NOT NULL CONSTRAINT df_member_product_views_count DEFAULT 1,
-    first_viewed_at DATETIME2(0) NOT NULL CONSTRAINT df_member_product_views_first DEFAULT SYSDATETIME(),
-    last_viewed_at  DATETIME2(0) NOT NULL CONSTRAINT df_member_product_views_last DEFAULT SYSDATETIME(),
-    CONSTRAINT pk_member_product_views PRIMARY KEY (id),
-    CONSTRAINT uk_member_product_views_member_product UNIQUE (member_id, product_id),
-    CONSTRAINT fk_member_product_views_member  FOREIGN KEY (member_id)  REFERENCES members (id)  ON DELETE CASCADE,
-    CONSTRAINT fk_member_product_views_product FOREIGN KEY (product_id) REFERENCES products (id) ON DELETE CASCADE
 );
 
 

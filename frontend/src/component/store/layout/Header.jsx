@@ -66,7 +66,7 @@ function Header() {
             <div ref={headerAreaRef} className="relative font-kinu">
                 <header className="grid h-[82px] grid-cols-[1fr_auto_1fr] items-center border-b border-line bg-paper px-[5.5%]
                            max-[760px]:h-auto max-[760px]:min-h-[65px] max-[760px]:gap-y-2 max-[760px]:px-[4%] max-[760px]:py-2.5">
-                    {/* 左：新品、分類與推薦入口 */}
+                    {/* 左：新品與分類入口 */}
                     <div className="flex items-center gap-[26px] max-[760px]:hidden">
                         <Link
                             to="/new-arrivals"
@@ -98,14 +98,6 @@ function Header() {
                                 {top.label}
                             </button>
                         ))}
-
-                        <Link
-                            to="/recommendations"
-                            onClick={closeMenu}
-                            className={navLinkClass}
-                        >
-                            為你推薦
-                        </Link>
                     </div>
 
                     {/* 手機版：分類收進漢堡選單按鈕（電腦版隱藏） */}

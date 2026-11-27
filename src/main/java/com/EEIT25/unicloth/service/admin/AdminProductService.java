@@ -1,6 +1,5 @@
 package com.EEIT25.unicloth.service.admin;
 
-import com.EEIT25.unicloth.service.shop.ProductStyleService;
 import com.EEIT25.unicloth.dto.admin.product.AdminCategoryOptionResponse;
 import com.EEIT25.unicloth.dto.admin.product.AdminProductDetailResponse;
 import com.EEIT25.unicloth.dto.admin.product.AdminProductListResponse;
@@ -8,7 +7,6 @@ import com.EEIT25.unicloth.dto.admin.product.CreateProductRequest;
 import com.EEIT25.unicloth.dto.admin.product.CreateProductVariantsRequest;
 import com.EEIT25.unicloth.dto.admin.product.UpdateProductRequest;
 import com.EEIT25.unicloth.dto.admin.product.UpdateProductStatusRequest;
-import com.EEIT25.unicloth.dto.store.style.StyleResponse;
 import com.EEIT25.unicloth.entity.Category;
 import com.EEIT25.unicloth.entity.Product;
 import com.EEIT25.unicloth.entity.ProductVariant;
@@ -39,7 +37,6 @@ public class AdminProductService {
     private final ProductRepository productRepository;
     private final ProductVariantRepository productVariantRepository;
     private final CategoryRepository categoryRepository;
-    private final ProductStyleService productStyleService;
 
     /**
      * 後台商品列表。
@@ -184,16 +181,9 @@ public class AdminProductService {
                 .price(request.price())
                 .origPrice(request.origPrice())
                 .newArrival(request.newArrival())
-                .hot(request.hot())
                 .imageUrl(null)
                 .status(ProductStatus.OFF_SHELF)
                 .build();
-
-        // 將選擇的風格標籤設定到新商品
-        productStyleService.applyStyles(
-                product,
-                request.styleIds()
-        );
 
         Product savedProduct =
                 productRepository.save(product);
@@ -371,13 +361,6 @@ public class AdminProductService {
         product.setOrigPrice(request.origPrice());
         product.setCategory(category);
         product.setNewArrival(request.newArrival());
-        product.setHot(request.hot());
-
-        // 更新商品的風格標籤
-        productStyleService.applyStyles(
-                product,
-                request.styleIds()
-        );
 
         List<ProductVariant> variants =
                 productVariantRepository
@@ -610,16 +593,6 @@ public class AdminProductService {
                         )
                         .toList();
 
-        // 將商品風格轉成回傳格式，並依照 ID 排序
-        List<StyleResponse> styles =
-                product.getStyles()
-                        .stream()
-                        .map(StyleResponse::from)
-                        .sorted(Comparator.comparing(
-                                StyleResponse::id
-                        ))
-                        .toList();
-
         return new AdminProductDetailResponse(
                 product.getId(),
                 product.getSlug(),
@@ -631,11 +604,9 @@ public class AdminProductService {
                 product.getCategory().getName(),
                 product.getCategory().getCode(),
                 product.isNewArrival(),
-                product.isHot(),
                 product.getStatus(),
                 product.getScheduledOffAt(),
                 product.getImageUrl(),
-                styles,
                 variantResponses
         );
     }

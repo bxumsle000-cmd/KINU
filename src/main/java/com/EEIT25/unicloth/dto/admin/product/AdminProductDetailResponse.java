@@ -1,6 +1,5 @@
 package com.EEIT25.unicloth.dto.admin.product;
 
-import com.EEIT25.unicloth.dto.store.style.StyleResponse;
 import com.EEIT25.unicloth.enums.product.ProductStatus;
 import java.time.LocalDateTime;
 import java.util.List;
@@ -16,11 +15,9 @@ public record AdminProductDetailResponse(
         String categoryName,
         String categoryCode,
         boolean newArrival,
-        boolean hot,
         ProductStatus status,
         LocalDateTime scheduledOffAt,
         String imageUrl,
-        List<StyleResponse> styles,
         List<VariantResponse> variants
 ) {
     /**

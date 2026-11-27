@@ -107,7 +107,7 @@ function HeaderActions() {
                 </Link>
             )}
 
-            {/* 登入後顯示會員中心選單（會員資料、推薦設定、登出），沒登入顯示登入。 */}
+            {/* 登入後顯示會員中心選單（會員資料、登出），沒登入顯示登入。 */}
             {loggedIn ? (
                 <MemberMenu className={actionClass} />
             ) : (

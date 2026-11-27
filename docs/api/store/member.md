@@ -10,8 +10,6 @@
 | 補填會員資料 | PUT | `/api/member/me/complete-profile` | 200 | 補填後的會員資料 |
 | 修改我的會員資料 | PUT | `/api/member/me/profile` | 200 | 修改後的會員資料 |
 
-清除瀏覽紀錄在另一份文件：[member-product-view.md](member-product-view.md)。
-
 > 🔒 **需要登入**：請求要帶 `Authorization: Bearer <token>`（token 從 `/api/auth/firebase` 取得），操作的是 token 裡的那個會員。沒帶 token 或 token 無效、過期回 401 `尚未登入或登入已失效`；帶員工 token 回 403 `沒有權限使用這個功能`。
 
 **帳號和個人資料分兩張表：** `members` 存 email、狀態；`member_profiles` 存姓名、手機、性別、生日、地址。第一次用 Google 登入時只有 `members`，補填後才有 `member_profiles`。

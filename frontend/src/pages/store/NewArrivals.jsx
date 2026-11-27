@@ -73,7 +73,10 @@ function NewArrivals() {
     // 新品預設由新到舊，也可切換價格排序。
     const [sort, setSort] = useState("id,desc");
     const [page, setPage] = useState(0);
-    const [products, setProducts] = useState(null);
+    // 查詢結果連同它對應的查詢條件一起存；條件換了但結果還沒回來時，products 就是 null（顯示載入中）
+    const [result, setResult] = useState({ key: null, data: null });
+    const requestKey = `${sort}|${page}`;
+    const products = result.key === requestKey ? result.data : null;
 
     function changeSort(newSort) {
         setSort(newSort);
@@ -85,21 +88,23 @@ function NewArrivals() {
             page: page,
             sort: sort
         });
+        const key = `${sort}|${page}`;
         let ignore = false;
-
-        setProducts(null);
 
         api(`/api/products/new-arrivals?${params}`)
             .then(data => {
                 if (!ignore) {
-                    setProducts(data);
+                    setResult({ key, data });
                 }
             })
             .catch(error => {
                 if (!ignore) {
-                    setProducts({
-                        content: [],
-                        page: { totalElements: 0 }
+                    setResult({
+                        key,
+                        data: {
+                            content: [],
+                            page: { totalElements: 0 }
+                        }
                     });
                     toast(error.message, true);
                 }

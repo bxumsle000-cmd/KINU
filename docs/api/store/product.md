@@ -8,7 +8,7 @@
 |---|---|---|---|---|
 | 搜尋商品 | GET | `/api/products` | 200 | 商品卡片（分頁） |
 | 新品 | GET | `/api/products/new-arrivals` | 200 | 商品卡片（分頁） |
-| 商品詳細頁 | GET | `/api/products/{slug}` | 200 | 商品資料 + 風格 + 顏色 / 尺寸 / 庫存 |
+| 商品詳細頁 | GET | `/api/products/{slug}` | 200 | 商品資料 + 顏色 / 尺寸 / 庫存 |
 
 這三支都**不需要登入**，也都**不需要 body**，參數都放在網址上。
 
@@ -18,7 +18,7 @@
 
 ## 1. 搜尋商品 `GET /api/products`
 
-用商品**名稱**或**風格**搜尋。
+用商品**名稱**搜尋。
 
 ### Request
 
@@ -37,15 +37,9 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 
 ### 搜尋規則
 
-商品符合下面**任一個**就會出現：
+商品名稱包含關鍵字就會出現，例：搜 `外套` → 「DRY-EX防曬連帽外套」。
 
-| 順位 | 條件 | 例子 |
-|---|---|---|
-| 1 | 商品名稱包含關鍵字 | 搜 `外套` → 「DRY-EX防曬連帽外套」 |
-| 2 | 商品有「直接符合」的風格：風格的名稱、代碼或搜尋別名包含關鍵字 | 搜 `日系` → 有「日系」標籤的商品 |
-| 3 | 商品有「相關」的風格：直接符合的風格，在 `style_relations` 設定的相關風格 | 搜 `日系` → 有日系相關風格標籤的商品 |
-
-- **順位小的排前面**；同一個順位裡，才依 `sort` 排序。
+- 依 `sort` 排序。
 - **不分大小寫**：搜 `dry` 也找得到「DRY-EX防曬連帽外套」。
 - 不會搜尋商品描述、分類、顏色。
 - **關鍵字是空的（沒帶、`""`、只有空白）→ 回空頁**，不會撈出全部商品。
@@ -65,12 +59,7 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
       "price": 690,
       "origPrice": null,
       "newArrival": false,
-      "hot": false,
-      "imageUrl": "img/products/kids-486825/col51.jpg",
-      "styles": [
-        { "id": 2, "code": "natural", "name": "自然風" },
-        { "id": 8, "code": "preppy", "name": "學院風" }
-      ]
+      "imageUrl": "img/products/kids-486825/col51.jpg"
     }
   ],
   "page": {
@@ -91,9 +80,7 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 | `price` | number | 售價 |
 | `origPrice` | number \| null | 原價；**有值且大於 `price` 時顯示特價** |
 | `newArrival` | boolean | 是否顯示「新品」標籤 |
-| `hot` | boolean | 是否顯示「熱門」標籤 |
 | `imageUrl` | string \| null | 縮圖，沒有時是 `null` |
-| `styles` | array | 商品的風格標籤，每一筆是 `{ id, code, name }`，順序不固定；沒有標籤是 `[]` |
 
 `page` 分頁資訊：
 
@@ -124,16 +111,14 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 ② ProductService.getProductsBySearch()
    ├─ 把 keyword 前後空白去掉
    │    └─ 去掉後是空的 → 直接回空頁（不查資料庫）
-   ├─ 查名稱、代碼或別名包含 keyword 的風格（直接風格）
-   ├─ 有直接風格 → 再查它們的相關風格，並去掉跟直接風格重複的
-   ├─ 查上架中、符合三個條件其中之一的商品，依順位 + sort 排序、分頁
+   ├─ 查上架中、名稱包含 keyword 的商品（findByStatusAndNameContainingIgnoreCase），依 sort 排序、分頁
    └─ 每個 Product 轉成 ProductCardResponse
    │
    ▼
 ③ 回 200 + JSON（content + page）
 ```
 
-**資料庫影響：** 只有「讀」`products`、`styles`、`style_aliases`、`style_relations`、`product_styles` 表，不會寫入任何資料。
+**資料庫影響：** 只有「讀」`products` 表，不會寫入任何資料。
 
 ---
 
@@ -171,7 +156,7 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 ② 回 200 + JSON（content + page）
 ```
 
-**資料庫影響：** 只有「讀」`products`、`product_styles`、`styles` 表，不會寫入任何資料。
+**資料庫影響：** 只有「讀」`products` 表，不會寫入任何資料。
 
 ---
 
@@ -194,10 +179,6 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
   "description": "※此商品網路獨家尺寸為XS.XXL.3XL.4XL。…",
   "price": 990,
   "origPrice": null,
-  "styles": [
-    { "id": 4, "code": "casual", "name": "休閒" },
-    { "id": 5, "code": "sporty", "name": "運動風" }
-  ],
   "colorOptions": [
     {
       "color": "藍色",
@@ -222,7 +203,7 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 }
 ```
 
-（`variantId`、`styles` 是示意用的，實際值以資料庫為準；這裡只列一部分顏色和尺寸。）
+（`variantId` 是示意用的，實際值以資料庫為準；這裡只列一部分顏色和尺寸。）
 
 商品本身：
 
@@ -233,7 +214,6 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 | `description` | string \| null | 商品描述，可能是 `null` |
 | `price` | number | 售價 |
 | `origPrice` | number \| null | 原價；**有值且大於 `price` 時顯示特價** |
-| `styles` | array | 商品的風格標籤，每一筆是 `{ id, code, name }`，順序不固定；沒有標籤是 `[]` |
 | `colorOptions` | array | 顏色選項，見下表 |
 
 `colorOptions` 每一個顏色：
@@ -258,8 +238,6 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 - 顏色：照「這個顏色的 SKU 第一次出現」的順序。
 - 尺寸：照 SKU id 由小到大。程式本身沒有特別排尺寸。
 
-**登入的會員看商品會留下瀏覽紀錄：** 帶會員 token 呼叫時，後端會記錄這次瀏覽，給個人化推薦用。沒帶 token、帶無效 token 或員工 token 都不會記錄，商品資料一樣正常回傳。
-
 ### Response — 失敗
 
 | 狀態碼 | 情況 | `message` |
@@ -272,15 +250,10 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 前端 GET /api/products/{slug}
    │
    ▼
-① ProductService.getProductDetail()   ← 整段包在 @Transactional 裡
+① ProductService.getProductDetail()   ← 整段包在 @Transactional(readOnly = true) 裡
    ├─ 用 slug 查「上架中」的商品（findOnSaleBySlug）
    │    └─ 查不到或已下架 → 404「找不到商品：{slug}」
    ├─ 查這件商品的所有 SKU，照 id 由小到大
-   ├─ MemberProductViewService.recordView()：會員才記錄瀏覽
-   │    ├─ 不是會員 → 什麼都不做
-   │    ├─ 上次瀏覽超過 30 分鐘 → view_count + 1、更新 last_viewed_at
-   │    ├─ 30 分鐘內看過 → 什麼都不做
-   │    └─ 第一次看這件商品 → 新增一筆，view_count = 1
    └─ ProductDetailResponse.from()：把 SKU 依顏色分組
         ├─ 同顏色的 SKU 放在一起
         ├─ 每個顏色的圖片取第一個 SKU 的圖片
@@ -290,7 +263,7 @@ GET /api/products?keyword=外套&page=0&size=24&sort=price,asc
 ② 回 200 + JSON
 ```
 
-**資料庫影響：** 讀 `products`、`product_variants`、`product_styles`、`styles` 表。帶會員 token 時，會新增或更新 `member_product_views` 的一筆。
+**資料庫影響：** 只有「讀」`products`、`product_variants` 表，不會寫入任何資料。
 
 **依顏色分組的手動推演**
 

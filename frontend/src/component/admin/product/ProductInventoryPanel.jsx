@@ -101,8 +101,57 @@ function ProductInventoryPanel({
     const [historyVersion, setHistoryVersion] =
         useState(0);
 
+    /*
+     * 載入入庫紀錄：換頁（historyPage）或入庫成功（historyVersion + 1）時重新查詢。
+     * 換頁很快時，舊的請求晚回來會被 cancelled 擋掉，不會蓋掉新的結果。
+     */
     useEffect(() => {
+        let cancelled = false;
+
+        async function loadTransactions() {
+            setHistoryLoading(true);
+            setHistoryError("");
+
+            try {
+                const params = new URLSearchParams({
+                    page: String(historyPage),
+                    size: String(
+                        HISTORY_PAGE_SIZE
+                    ),
+                    sort: "createdAt,desc",
+                });
+
+                const data = await adminRequest(
+                    `/api/admin/product/inventory/transactions?${params.toString()}`
+                );
+
+                if (cancelled) {
+                    return;
+                }
+
+                setTransactions(
+                    data.content || []
+                );
+
+                setHistoryTotalPages(
+                    data.page?.totalPages || 0
+                );
+            } catch (e) {
+                if (!cancelled) {
+                    setHistoryError(e.message);
+                }
+            } finally {
+                if (!cancelled) {
+                    setHistoryLoading(false);
+                }
+            }
+        }
+
         loadTransactions();
+
+        return () => {
+            cancelled = true;
+        };
     }, [historyPage, historyVersion]);
 
     /*
@@ -180,37 +229,6 @@ function ProductInventoryPanel({
             cancelled = true;
         };
     }, [initialProductId]);
-
-    async function loadTransactions() {
-        setHistoryLoading(true);
-        setHistoryError("");
-
-        try {
-            const params = new URLSearchParams({
-                page: String(historyPage),
-                size: String(
-                    HISTORY_PAGE_SIZE
-                ),
-                sort: "createdAt,desc",
-            });
-
-            const data = await adminRequest(
-                `/api/admin/product/inventory/transactions?${params.toString()}`
-            );
-
-            setTransactions(
-                data.content || []
-            );
-
-            setHistoryTotalPages(
-                data.page?.totalPages || 0
-            );
-        } catch (e) {
-            setHistoryError(e.message);
-        } finally {
-            setHistoryLoading(false);
-        }
-    }
 
     async function searchProducts(event) {
         event.preventDefault();

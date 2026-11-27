@@ -134,9 +134,7 @@
   "price": 390,
   "origPrice": 590,
   "categoryId": 339,
-  "styleIds": [1, 3],
-  "newArrival": true,
-  "hot": false
+  "newArrival": true
 }
 ```
 
@@ -148,9 +146,7 @@
 | `price` | number | ✅ | 不可空（訊息：`請輸入售價`）；> 0（訊息：`售價必須大於 0`） |
 | `origPrice` | number | ❌ | 原價；> 0（訊息：`原價必須大於 0`）；有傳的話要**大於**售價 |
 | `categoryId` | number | ✅ | 不可空（訊息：`請選擇商品分類`）；要是**最底層**分類（見 [admin-product-category.md](admin-product-category.md)） |
-| `styleIds` | number[] | ❌ | 風格標籤 id（見 [style.md](../store/style.md)） |
 | `newArrival` | boolean | ✅ | 是否顯示新品標籤；**一定要傳**，沒傳回 400 |
-| `hot` | boolean | ✅ | 是否顯示熱門標籤；**一定要傳**，沒傳回 400 |
 
 **`slug` 怎麼產生：** 依分類的第 1 層決定前綴，加上貨號。
 
@@ -176,14 +172,9 @@
   "categoryName": "長袖",
   "categoryCode": "all_women-tops-t-shirts-anchor01",
   "newArrival": true,
-  "hot": false,
   "status": "OFF_SHELF",
   "scheduledOffAt": null,
   "imageUrl": null,
-  "styles": [
-    { "id": 1, "code": "japanese", "name": "日系" },
-    { "id": 3, "code": "minimal", "name": "簡約" }
-  ],
   "variants": []
 }
 ```
@@ -194,11 +185,10 @@
 | `description` | string \| null | 商品說明 |
 | `price`、`origPrice` | number | 售價；原價（沒有是 `null`） |
 | `categoryId`、`categoryName`、`categoryCode` | | 所屬分類 |
-| `newArrival`、`hot` | boolean | 新品、熱門標籤 |
+| `newArrival` | boolean | 新品標籤 |
 | `status` | string | `ON_SALE` / `OFF_SHELF` |
 | `scheduledOffAt` | string \| null | 預定下架時間（見 [admin-product-schedule.md](admin-product-schedule.md)） |
 | `imageUrl` | string \| null | 商品主圖 |
-| `styles` | array | 風格標籤 `{ id, code, name }`，照 id 由小到大 |
 | `variants` | array | SKU，見下表 |
 
 `variants` 每一筆（照 id 由小到大）：
@@ -217,11 +207,10 @@
 | 狀態碼 | 情況 | `message` |
 |---|---|---|
 | 400 | 欄位驗證沒過 | 例：`productNumber: 商品貨號必須是 6 位數字`、`categoryId: 請選擇商品分類; price: 售價必須大於 0` |
-| 400 | `newArrival`、`hot` 沒傳、JSON 語法錯誤 | `請求內容格式錯誤，請確認欄位值是否正確` |
+| 400 | `newArrival` 沒傳、JSON 語法錯誤 | `請求內容格式錯誤，請確認欄位值是否正確` |
 | 400 | 分類不是最底層 | `請選擇最下層商品分類` |
 | 400 | 原價沒有大於售價 | `原價必須大於售價` |
 | 400 | 分類的第 1 層不是女裝、男裝、童裝 | `無法判斷商品分類的網址前綴` |
-| 400 | `styleIds` 有不存在的風格 | `包含不存在的風格標籤` |
 | 404 | 找不到分類 | `找不到商品分類：{categoryId}` |
 | 409 | 貨號已經用過 | `商品貨號已存在：{productNumber}` |
 
@@ -241,14 +230,13 @@
    ├─ 檢查有沒有 slug 以「-貨號」結尾的商品 → 有 → 409
    ├─ 依分類第 1 層決定 slug 前綴
    ├─ 組商品（status = OFF_SHELF、image_url = null）
-   ├─ ProductStyleService.applyStyles()：設定風格標籤 → 有不存在的 → 400
    └─ 存進資料庫
    │
    ▼
 ③ 回 201 + 完整商品
 ```
 
-**資料庫影響：** `products` 表新增一筆；有傳 `styleIds` 時 `product_styles` 表每個風格新增一筆。
+**資料庫影響：** `products` 表新增一筆。
 
 ---
 
@@ -402,7 +390,7 @@
 ② 回 200 + JSON
 ```
 
-**資料庫影響：** 只有「讀」`products`、`product_variants`、`categories`、`product_styles`、`styles` 表，不會寫入任何資料。
+**資料庫影響：** 只有「讀」`products`、`product_variants`、`categories` 表，不會寫入任何資料。
 
 ---
 
@@ -423,21 +411,11 @@
   "price": 290,
   "origPrice": 590,
   "categoryId": 339,
-  "styleIds": [1, 3],
-  "newArrival": false,
-  "hot": true
+  "newArrival": false
 }
 ```
 
 欄位規則同「新增商品」（沒有 `productNumber`）。這支是 PUT，**沒傳的 `description`、`origPrice` 會被清成 `null`**。
-
-`styleIds` 比較特別：
-
-| 傳什麼 | 結果 |
-|---|---|
-| 沒傳或 `null` | 保留原本的風格標籤 |
-| `[]` | 清除全部風格標籤 |
-| `[1, 3]` | 換成這些風格標籤 |
 
 ### Response — 成功 `200 OK`
 
@@ -448,10 +426,9 @@
 | 狀態碼 | 情況 | `message` |
 |---|---|---|
 | 400 | 欄位驗證沒過 | 例：`name: 請輸入商品名稱; price: 售價必須大於 0` |
-| 400 | `newArrival`、`hot` 沒傳、JSON 語法錯誤 | `請求內容格式錯誤，請確認欄位值是否正確` |
+| 400 | `newArrival` 沒傳、JSON 語法錯誤 | `請求內容格式錯誤，請確認欄位值是否正確` |
 | 400 | 分類不是最底層 | `請選擇最下層商品分類` |
 | 400 | 原價沒有大於售價 | `原價必須大於售價` |
-| 400 | `styleIds` 有不存在的風格 | `包含不存在的風格標籤` |
 | 404 | 找不到商品 | `找不到商品：{productId}` |
 | 404 | 找不到分類 | `找不到商品分類：{categoryId}` |
 
@@ -469,14 +446,13 @@
    ├─ 用 id 查商品 → 查不到 → 404
    ├─ 查分類 → 查不到 → 404；不是最底層 → 400
    ├─ 檢查原價 > 售價 → 沒過 → 400
-   ├─ 把欄位設成 Request 的值
-   └─ ProductStyleService.applyStyles()：更新風格標籤 → 有不存在的 → 400
+   └─ 把欄位設成 Request 的值
    │
    ▼
 ③ 回 200 + 完整商品
 ```
 
-**資料庫影響：** `products` 表更新一筆；`product_styles` 依 `styleIds` 更新。
+**資料庫影響：** `products` 表更新一筆。
 
 ---
 

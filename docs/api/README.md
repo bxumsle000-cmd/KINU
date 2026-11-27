@@ -13,11 +13,8 @@
 | [coupon.md](store/coupon.md) | `CouponController` | `/api/coupon` | 會員 |
 | [ecpay.md](store/ecpay.md) | `EcpayController` | `/api/payments/ecpay` | 建立付款要會員；通知不用 |
 | [member.md](store/member.md) | `MemberController` | `/api/member` | 會員 |
-| [member-product-view.md](store/member-product-view.md) | `MemberProductViewController` | `/api/member/product-views` | 會員 |
 | [order.md](store/order.md) | `OrderController` | `/api/orders` | 會員 |
 | [product.md](store/product.md) | `ProductController` | `/api/products` | 不需要 |
-| [recommendation.md](store/recommendation.md) | `RecommendationController` | `/api/recommendations` | 不需要 |
-| [style.md](store/style.md) | `StyleController` | `/api/styles` | 不需要 |
 | [support-ticket.md](store/support-ticket.md) | `SupportTicketController` | `/api/support-tickets` | 會員 |
 | [wishlist.md](store/wishlist.md) | `WishlistController` | `/api/wishlist` | 會員 |
 
@@ -69,9 +66,14 @@
 
 多個欄位都錯時，會用 `; ` 接成一句，**順序不固定**。
 
+### 網址不存在回 404
+
+打到沒有對應 API、也沒有靜態檔的網址（例如 `/no-such-page`、帶員工 token 打 `GET /api/admin/nope`），回 `404`、`找不到這個網址`。
+要登入的路徑在沒帶 token 時，會先被 Security 擋下回 `401`，不會走到這一步。
+
 ### 這些情況都回 500
 
-`GlobalExceptionHandler` 只有專門處理「欄位驗證失敗」和「JSON 讀不懂」，其他 Spring 丟出的例外都會掉到最後的兜底 handler，回 `500`、`系統發生錯誤，請稍後再試`：
+`GlobalExceptionHandler` 只有專門處理「欄位驗證失敗」、「JSON 讀不懂」和「網址不存在」，其他 Spring 丟出的例外都會掉到最後的兜底 handler，回 `500`、`系統發生錯誤，請稍後再試`：
 
 | 情況 | 例子 |
 |---|---|
@@ -79,7 +81,7 @@
 | 單一網址參數的型別不對 | `GET /api/coupon/usable?subtotal=abc`、`GET /api/admin/order/orders?status=x` |
 | 必填的網址參數沒帶 | `GET /api/coupon/usable` |
 | `sort` 用了不存在的欄位 | `GET /api/products?keyword=a&sort=nope,asc` |
-| 路徑不存在、HTTP method 不對 | `GET /api/nope`、`GET /api/checkout` |
+| HTTP method 不對 | `GET /api/checkout` |
 | `Content-Type` 不對 | 用 JSON 打 `POST /api/payments/ecpay/notify` |
 
 例外：`GET /api/categories/{code}/products`、`GET /api/admin/admin/staff` 的篩選條件是綁到物件上的，型別不對時回 `400`，`message` 是 Spring 的英文轉換訊息（見各自的文件）。

@@ -33,11 +33,6 @@ function MemberMenu({ className }) {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/member/recommendation-settings" onClick={() => setMemberMenuOpen(false)} className={itemClass}>
-                            推薦設定
-                        </Link>
-                    </li>
-                    <li>
                         <button onClick={logoutMember} className={itemClass}>
                             登出
                         </button>
